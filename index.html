@@ -1,1919 +1,1133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nuriva Photography offers premium photography, video production, editing, and digital experiences." />
   <title>Nuriva Photography</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
 
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Model Viewer -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
-
-
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-
 <body>
-  <!-- Start Header -->
-  <!-- StartHeader -->
-  <!-- Start Header -->
-<header class="site-header" id="siteHeader">
-  <div class="container">
-    <nav class="navbar-custom">
-      <div class="row align-items-center g-2">
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar-custom">
+        <div class="row align-items-center g-2">
+          <div class="col-6 col-lg-3">
+            <a href="#" class="brand-logo" aria-label="Nuriva home">
+              <img src="images/Elegant.webp" alt="Nuriva Logo" />
+            </a>
+          </div>
 
-        <!-- Logo -->
-        <div class="col-6 col-lg-3">
-          <a href="#" class="brand-logo">
-            <img src="images/Elegant NURIVA logo with metallic accents 1.png" alt="Nuriva Logo" />
+          <div class="col-lg-6 d-none d-lg-block">
+            <ul class="desktop-nav nav justify-content-center gap-4">
+              <li class="nav-item"><a class="nav-link active-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#digital-work">Digital Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#booking">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3 text-end">
+            <a href="#booking" class="header-btn d-none d-lg-inline-flex">Contact Me</a>
+
+            <button
+              class="menu-toggle-btn d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+              aria-label="Open menu"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="offcanvas offcanvas-end mobile-menu-canvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="offcanvas-body">
+      <nav class="mobile-nav">
+        <a class="nav-link active-link" href="#" data-bs-dismiss="offcanvas">Home</a>
+        <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
+        <a class="nav-link" href="#digital-work" data-bs-dismiss="offcanvas">Digital Work</a>
+        <a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a>
+        <a class="nav-link" href="#testimonials" data-bs-dismiss="offcanvas">Reviews</a>
+        <a class="nav-link" href="#booking" data-bs-dismiss="offcanvas">Contact</a>
+      </nav>
+
+      <div class="mobile-menu-bottom">
+        <a href="#booking" class="mobile-book-btn" data-bs-dismiss="offcanvas">Start Your Project</a>
+        <a href="https://wa.me/4917676726892" class="mobile-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <span class="hero-label" data-aos="fade-up" data-aos-delay="100">Creative Visual Services</span>
+
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+              We Create <br />
+              <span class="typed-text"></span><span class="cursor">|</span>
+            </h1>
+
+            <p class="hero-text" data-aos="fade-up" data-aos-delay="300">
+              Premium visuals and digital experiences crafted to elevate your brand.
+            </p>
+
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+              <a href="#portfolio" class="header-btn">View Our Work</a>
+              <a href="#booking" class="btn-start-project">Start Your Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-visual" data-aos="fade-left" data-aos-delay="250">
+            <div class="camera-glow"></div>
+            <model-viewer
+              class="camera-model"
+              src="camera_canon_eos_400d.glb"
+              alt="3D camera model"
+              auto-rotate
+              rotation-per-second="7deg"
+              shadow-intensity="1"
+              exposure="1"
+              environment-image="neutral"
+              interaction-prompt="none"
+              disable-zoom
+              scale="0.82 0.82 0.82"
+            ></model-viewer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="portfolio-heading text-center">
+        <span class="section-label" data-aos="fade-up" data-aos-delay="100">Selected Work</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">A Portfolio Of Refined Visual Work</h2>
+        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+          Explore a curated collection of photography crafted for food, products, animals, and portraits with a premium visual style.
+        </p>
+      </div>
+
+      <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="400">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" type="button" data-filter="food">Food</button>
+        <button class="filter-btn" type="button" data-filter="products">Products</button>
+        <button class="filter-btn" type="button" data-filter="animals">Animals</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid" data-aos="fade-up" data-aos-delay="100"></div>
+
+      <div class="portfolio-swiper-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper" id="portfolioSwiperWrapper"></div>
+          <div class="swiper-pagination portfolio-pagination"></div>
+        </div>
+      </div>
+
+      <div class="portfolio-action text-center" data-aos="fade-up" data-aos-delay="450">
+        <a href="#booking" class="view-portfolio-btn">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Production -->
+  <section class="video-production-section" id="video-production">
+    <div class="container">
+      <div class="video-production-heading text-center">
+        <span class="section-label" data-aos="fade-up" data-aos-delay="100">Video Production</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Creative Video Production &amp; Professional Editing</h2>
+        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+          From filming refined visual content to editing it with precision, every video is crafted to feel modern, cinematic, and professionally presented.
+        </p>
+      </div>
+
+      <div class="video-production-desktop" data-aos="fade-up" data-aos-delay="350">
+        <div class="video-production-grid">
+          <a href="videos/project-11.mp4" class="video-production-card" data-fancybox="video-production-gallery" data-caption="Creative Brand Video" data-type="html5video">
+            <video class="video-production-media" autoplay muted loop playsinline preload="auto" poster="images/video-poster-3.webp">
+              <source src="videos/project-11.mp4" type="video/mp4" />
+            </video>
+            <div class="video-production-overlay">
+              <span class="video-production-category">Videography</span>
+              <h3>Creative Brand Video</h3>
+            </div>
+            <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
+          </a>
+
+          <a href="videos/project-22.mp4" class="video-production-card" data-fancybox="video-production-gallery" data-caption="Product Video Showcase" data-type="html5video">
+            <video class="video-production-media" autoplay muted loop playsinline preload="auto" poster="images/video-poster-3.webp">
+              <source src="videos/project-22.mp4" type="video/mp4" />
+            </video>
+            <div class="video-production-overlay">
+              <span class="video-production-category">Product Video</span>
+              <h3>Product Video Showcase</h3>
+            </div>
+            <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
+          </a>
+
+          <a href="videos/project-33.mp4" class="video-production-card" data-fancybox="video-production-gallery" data-caption="Edited Cinematic Reel" data-type="html5video">
+            <video class="video-production-media" autoplay muted loop playsinline preload="auto" poster="images/video-poster-3.webp">
+              <source src="videos/project-33.mp4" type="video/mp4" />
+            </video>
+            <div class="video-production-overlay">
+              <span class="video-production-category">Video Editing</span>
+              <h3>Edited Cinematic Reel</h3>
+            </div>
+            <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
           </a>
         </div>
-
-        <!-- Desktop Nav -->
-        <div class="col-lg-6 d-none d-lg-block">
-          <ul class="desktop-nav nav justify-content-center gap-4">
-            <li class="nav-item"><a class="nav-link active-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#digital-work">Digital Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="#booking">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Desktop Button + Mobile Toggle -->
-        <div class="col-6 col-lg-3 text-end">
-          <a href="#booking" class="header-btn d-none d-lg-inline-flex">Contact Me</a>
-
-          <button
-            class="menu-toggle-btn d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-            aria-label="Open menu"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
-
       </div>
-    </nav>
-  </div>
-</header>
 
-<!-- Mobile Menu -->
-<div
-  class="offcanvas offcanvas-end mobile-menu-canvas"
-  tabindex="-1"
-  id="mobileMenu"
-  aria-labelledby="mobileMenuLabel"
->
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <div class="video-production-mobile" data-aos="fade-up" data-aos-delay="350">
+        <div class="swiper video-production-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="videos/project-11.mp4" class="video-production-card mobile-video-card" data-fancybox="video-production-gallery" data-caption="Creative Brand Video" data-type="html5video">
+                <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
+                  <source src="videos/project-11.mp4" type="video/mp4" />
+                </video>
+                <div class="video-production-overlay visible-video-overlay">
+                  <span class="video-production-category">Videography</span>
+                  <h3>Creative Brand Video</h3>
+                </div>
+                <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
+              </a>
+            </div>
 
-    <button
-      type="button"
-      class="btn-close-custom"
-      data-bs-dismiss="offcanvas"
-      aria-label="Close"
-    >
-      <i class="bi bi-x-lg"></i>
-    </button>
-  </div>
+            <div class="swiper-slide">
+              <a href="videos/project-22.mp4" class="video-production-card mobile-video-card" data-fancybox="video-production-gallery" data-caption="Product Video Showcase" data-type="html5video">
+                <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
+                  <source src="videos/project-22.mp4" type="video/mp4" />
+                </video>
+                <div class="video-production-overlay visible-video-overlay">
+                  <span class="video-production-category">Product Video</span>
+                  <h3>Product Video Showcase</h3>
+                </div>
+                <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
+              </a>
+            </div>
 
-  <div class="offcanvas-body">
-    <nav class="mobile-nav">
-      <a class="nav-link active-link" href="#" data-bs-dismiss="offcanvas">Home</a>
-      <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
-      <a class="nav-link" href="#digital-work" data-bs-dismiss="offcanvas">Digital Work</a>
-      <a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a>
-      <a class="nav-link" href="#testimonials" data-bs-dismiss="offcanvas">Reviews</a>
-      <a class="nav-link" href="#booking" data-bs-dismiss="offcanvas">Contact</a>
-    </nav>
-
-    <div class="mobile-menu-bottom">
-      <a href="#booking" class="mobile-book-btn" data-bs-dismiss="offcanvas">Start Your Project</a>
-
-      <a
-        href="https://wa.me/4917676726892"
-        class="mobile-whatsapp-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="bi bi-whatsapp"></i>
-        <span>Chat on WhatsApp</span>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-  <!-- End  Header   -->
-  <!-- End  Header   -->
-  <!-- End  Header   -->
-
-
-
-
-
-
-
-<!-- Hero -->
-<section class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Left Content -->
-      <div class="col-lg-6">
-        <div class="hero-content">
-          <span class="hero-label" data-aos="fade-up" data-aos-delay="100">
-            Creative Visual Services
-          </span>
-
-          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
-            We Create <br>
-            <span class="typed-text"></span><span class="cursor">|</span>
-          </h1>
-
-          <p class="hero-text" data-aos="fade-up" data-aos-delay="300">
-            Premium visuals and digital experiences crafted to elevate your brand.
-          </p>
-
-          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-            <a href="#portfolio" class="header-btn">View Our Work</a>
-            <a href="#booking" class="btn-start-project">Start Your Project</a>
+            <div class="swiper-slide">
+              <a href="videos/project-33.mp4" class="video-production-card mobile-video-card" data-fancybox="video-production-gallery" data-caption="Edited Cinematic Reel" data-type="html5video">
+                <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
+                  <source src="videos/project-33.mp4" type="video/mp4" />
+                </video>
+                <div class="video-production-overlay visible-video-overlay">
+                  <span class="video-production-category">Video Editing</span>
+                  <h3>Edited Cinematic Reel</h3>
+                </div>
+                <div class="video-play-badge"><i class="bi bi-play-fill"></i></div>
+              </a>
+            </div>
           </div>
+          <div class="swiper-pagination video-production-pagination"></div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Right Camera -->
-      <div class="col-lg-6">
-        <div class="hero-visual" data-aos="fade-left" data-aos-delay="250">
-          <div class="camera-glow"></div>
+  <!-- Digital Work -->
+  <section class="digital-section" id="digital-work">
+    <div class="container">
+      <div class="digital-heading text-center">
+        <span class="section-label" data-aos="fade-up" data-aos-delay="100">Digital Experiences</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Creative Work Beyond Photography</h2>
+        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+          From elegant website previews to motion-driven product visuals, explore a curated selection of digital work crafted with style, clarity, and modern visual direction.
+        </p>
+      </div>
 
-          <model-viewer
-            class="camera-model"
-            src="camera_canon_eos_400d.glb"
-            alt="3D camera model"
-            auto-rotate
-            rotation-per-second="7deg"
-            shadow-intensity="1"
-            exposure="1"
-            environment-image="neutral"
-            interaction-prompt="none"
-            disable-zoom
-            scale="0.82 0.82 0.82">
-          </model-viewer>
+      <div class="digital-desktop-view">
+        <div class="digital-grid">
+          <a href="videos/project-1.mp4" class="digital-card video-card" data-aos="fade-up" data-aos-delay="100" data-fancybox="digital-videos" data-caption="Luxury Brand Landing Experience" data-type="html5video">
+            <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+              <source src="videos/project-1.mp4" type="video/mp4" />
+            </video>
+            <div class="digital-overlay">
+              <span class="digital-category">Landing Page</span>
+              <h3>Luxury Brand Landing Experience</h3>
+            </div>
+          </a>
+
+          <a href="videos/project-2.mp4" class="digital-card video-card" data-aos="fade-up" data-aos-delay="180" data-fancybox="digital-videos" data-caption="Interactive Product Showcase" data-type="html5video">
+            <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+              <source src="videos/project-2.mp4" type="video/mp4" />
+            </video>
+            <div class="digital-overlay">
+              <span class="digital-category">Front-End</span>
+              <h3>Interactive Product Showcase</h3>
+            </div>
+          </a>
+
+          <a href="videos/project-3.mp4" class="digital-card video-card" data-aos="fade-up" data-aos-delay="260" data-fancybox="digital-videos" data-caption="Modern Website Interface Motion" data-type="html5video">
+            <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+              <source src="videos/project-3.mp4" type="video/mp4" />
+            </video>
+            <div class="digital-overlay">
+              <span class="digital-category">UI / UX</span>
+              <h3>Modern Website Interface Motion</h3>
+            </div>
+          </a>
+
+          <a href="images/digital-1.webp" class="digital-card web-preview-card" data-aos="fade-up" data-aos-delay="120" data-fancybox="digital-images" data-caption="Minimal Landing Page Concept">
+            <div class="browser-frame">
+              <div class="browser-top"><span></span><span></span><span></span></div>
+              <div class="browser-body">
+                <div class="web-shot-scroll">
+                  <img src="images/digital-1.webp" alt="Minimal Landing Page Concept" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div class="digital-overlay visible-overlay">
+              <span class="digital-category">Web Design</span>
+              <h3>Minimal Landing Page Concept</h3>
+            </div>
+          </a>
+
+          <a href="images/digital-2.webp" class="digital-card web-preview-card" data-aos="fade-up" data-aos-delay="200" data-fancybox="digital-images" data-caption="Elegant Conversion-Focused Layout">
+            <div class="browser-frame">
+              <div class="browser-top"><span></span><span></span><span></span></div>
+              <div class="browser-body">
+                <div class="web-shot-scroll">
+                  <img src="images/digital-2.webp" alt="Elegant Conversion-Focused Layout" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div class="digital-overlay visible-overlay">
+              <span class="digital-category">Front-End Design</span>
+              <h3>Elegant Conversion-Focused Layout</h3>
+            </div>
+          </a>
+
+          <a href="images/digital-3.webp" class="digital-card web-preview-card" data-aos="fade-up" data-aos-delay="280" data-fancybox="digital-images" data-caption="Premium Responsive Web Presentation">
+            <div class="browser-frame">
+              <div class="browser-top"><span></span><span></span><span></span></div>
+              <div class="browser-body">
+                <div class="web-shot-scroll">
+                  <img src="images/digital-3.webp" alt="Premium Responsive Web Presentation" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div class="digital-overlay visible-overlay">
+              <span class="digital-category">Full Website</span>
+              <h3>Premium Responsive Web Presentation</h3>
+            </div>
+          </a>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <div class="digital-mobile-view">
+        <div class="digital-mobile-group">
+          <div class="digital-mobile-subtitle"><span>Featured Motion Projects</span></div>
+          <div class="swiper digital-video-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="videos/project-1.mp4" class="digital-card video-card mobile-digital-card" data-fancybox="digital-videos" data-caption="Luxury Brand Landing Experience" data-type="html5video">
+                  <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+                    <source src="videos/project-1.mp4" type="video/mp4" />
+                  </video>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">Landing Page</span>
+                    <h3>Luxury Brand Landing Experience</h3>
+                  </div>
+                </a>
+              </div>
 
+              <div class="swiper-slide">
+                <a href="videos/project-2.mp4" class="digital-card video-card mobile-digital-card" data-fancybox="digital-videos" data-caption="Interactive Product Showcase" data-type="html5video">
+                  <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+                    <source src="videos/project-2.mp4" type="video/mp4" />
+                  </video>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">Front-End</span>
+                    <h3>Interactive Product Showcase</h3>
+                  </div>
+                </a>
+              </div>
 
+              <div class="swiper-slide">
+                <a href="videos/project-3.mp4" class="digital-card video-card mobile-digital-card" data-fancybox="digital-videos" data-caption="Modern Website Interface Motion" data-type="html5video">
+                  <video class="digital-media" autoplay muted loop playsinline preload="metadata">
+                    <source src="videos/project-3.mp4" type="video/mp4" />
+                  </video>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">UI / UX</span>
+                    <h3>Modern Website Interface Motion</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination digital-video-pagination"></div>
+          </div>
+        </div>
 
+        <div class="digital-mobile-group">
+          <div class="digital-mobile-subtitle"><span>Website & Landing Page Previews</span></div>
+          <div class="swiper digital-image-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images/digital-1.webp" class="digital-card web-preview-card mobile-digital-card" data-fancybox="digital-images" data-caption="Minimal Landing Page Concept">
+                  <div class="browser-frame">
+                    <div class="browser-top"><span></span><span></span><span></span></div>
+                    <div class="browser-body">
+                      <div class="web-shot-scroll">
+                        <img src="images/digital-1.webp" alt="Minimal Landing Page Concept" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">Web Design</span>
+                    <h3>Minimal Landing Page Concept</h3>
+                  </div>
+                </a>
+              </div>
 
+              <div class="swiper-slide">
+                <a href="images/digital-2.webp" class="digital-card web-preview-card mobile-digital-card" data-fancybox="digital-images" data-caption="Elegant Conversion-Focused Layout">
+                  <div class="browser-frame">
+                    <div class="browser-top"><span></span><span></span><span></span></div>
+                    <div class="browser-body">
+                      <div class="web-shot-scroll">
+                        <img src="images/digital-2.webp" alt="Elegant Conversion-Focused Layout" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">Front-End Design</span>
+                    <h3>Elegant Conversion-Focused Layout</h3>
+                  </div>
+                </a>
+              </div>
 
-<section class="portfolio-section" id="portfolio">
-  <div class="container">
-    <div class="portfolio-heading text-center">
-      <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-        Selected Work
-      </span>
+              <div class="swiper-slide">
+                <a href="images/digital-3.webp" class="digital-card web-preview-card mobile-digital-card" data-fancybox="digital-images" data-caption="Premium Responsive Web Presentation">
+                  <div class="browser-frame">
+                    <div class="browser-top"><span></span><span></span><span></span></div>
+                    <div class="browser-body">
+                      <div class="web-shot-scroll">
+                        <img src="images/digital-3.webp" alt="Premium Responsive Web Presentation" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="digital-overlay visible-overlay">
+                    <span class="digital-category">Full Website</span>
+                    <h3>Premium Responsive Web Presentation</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination digital-image-pagination"></div>
+          </div>
+        </div>
+      </div>
 
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-        A Portfolio Of Refined Visual Work
-      </h2>
-
-      <p class="section-text" data-aos="fade-up" data-aos-delay="300">
-        Explore a curated collection of photography crafted for food, products,
-        animals, and portraits with a premium visual style.
-      </p>
-    </div>
-
-    <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="400">
-      <button class="filter-btn active" type="button" data-filter="all">All</button>
-            <button class="filter-btn" type="button" data-filter="portraits">Portraits</button>
-      <button class="filter-btn" type="button" data-filter="food">Food</button>
-      <button class="filter-btn" type="button" data-filter="products">Products</button>
-      <button class="filter-btn" type="button" data-filter="animals">Animals</button>
-
-    </div>
-
-    <!-- Desktop / Tablet -->
-    <div class="portfolio-grid" id="portfolioGrid" data-aos="fade-up" data-aos-delay="100"></div>
-
-    <!-- Mobile -->
-    <div class="portfolio-swiper-wrapper" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper portfolio-swiper">
-        <div class="swiper-wrapper" id="portfolioSwiperWrapper"></div>
-        <div class="swiper-pagination portfolio-pagination"></div>
+      <div class="digital-action text-center" data-aos="fade-up" data-aos-delay="350">
+        <a href="#booking" class="view-portfolio-btn">Start Your Project</a>
       </div>
     </div>
+  </section>
 
-    <div class="portfolio-action text-center" data-aos="fade-up" data-aos-delay="450">
-      <a href="#booking" class="view-portfolio-btn">Start Your Project</a>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<section class="video-production-section" id="video-production">
-  <div class="container">
-    <div class="video-production-heading text-center">
-      <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-        Video Production
-      </span>
-
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-        Creative Video Production & Professional Editing
-      </h2>
-
-      <p class="section-text" data-aos="fade-up" data-aos-delay="300">
-        From filming refined visual content to editing it with precision, every video is crafted
-        to feel modern, cinematic, and professionally presented.
-      </p>
-    </div>
-
-    <!-- Desktop / Tablet -->
-    <div class="video-production-desktop" data-aos="fade-up" data-aos-delay="350">
-      <div class="video-production-grid">
-
-        <!-- Card 1 -->
-        <a
-          href="videos/project-11.mp4"
-          class="video-production-card"
-          data-fancybox="video-production-gallery"
-          data-caption="Creative Brand Video"
-          data-type="html5video"
-        >
-<video
-  class="video-production-media"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  poster="images/video-poster-3.jpg"
->
-  <source src="videos/project-11.mp4" type="video/mp4" />
-</video>
-
-          <div class="video-production-overlay">
-            <span class="video-production-category">Videography</span>
-            <h3>Creative Brand Video</h3>
+  <!-- Why Choose Me -->
+  <section class="why-section" id="why-choose-me">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5">
+          <div class="why-content">
+            <span class="section-label" data-aos="fade-up" data-aos-delay="100">Why Choose Me</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Creative Work Built With Quality, Clarity, And Purpose</h2>
+            <p class="section-text why-text" data-aos="fade-up" data-aos-delay="300">
+              Every project is approached with attention to detail, visual direction, and a strong focus on presenting your brand in the most professional way through photography, websites, video, and editing.
+            </p>
+            <a href="#booking" class="why-btn" data-aos="fade-up" data-aos-delay="400">Start Your Project</a>
           </div>
+        </div>
 
-          <div class="video-play-badge">
-            <i class="bi bi-play-fill"></i>
+        <div class="col-lg-7">
+          <div class="why-cards">
+            <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="why-card-number">01</div>
+              <h3>Strong Visual Direction</h3>
+              <p>Every project is designed with a clear creative vision to make the final result feel polished, modern, and memorable.</p>
+            </div>
+
+            <div class="why-card" data-aos="fade-up" data-aos-delay="220">
+              <div class="why-card-number">02</div>
+              <h3>Professional Execution</h3>
+              <p>From planning to final delivery, each step is handled with care to create work that looks premium and well-crafted.</p>
+            </div>
+
+            <div class="why-card" data-aos="fade-up" data-aos-delay="290">
+              <div class="why-card-number">03</div>
+              <h3>Tailored To Your Brand</h3>
+              <p>Every service is adapted to your business, style, and goals instead of using a generic one-size-fits-all approach.</p>
+            </div>
+
+            <div class="why-card" data-aos="fade-up" data-aos-delay="360">
+              <div class="why-card-number">04</div>
+              <h3>Refined Final Results</h3>
+              <p>Whether it is photography, websites, or video editing, the final outcome is shaped to feel clean, elegant, and high quality.</p>
+            </div>
           </div>
-        </a>
-
-        <!-- Card 2 -->
-        <a
-          href="videos/project-22.mp4"
-          class="video-production-card"
-          data-fancybox="video-production-gallery"
-          data-caption="Product Video Showcase"
-          data-type="html5video"
-        >
-<video
-  class="video-production-media"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  poster="images/video-poster-3.jpg"
->
-  <source src="videos/project-22.mp4" type="video/mp4" />
-</video>
-
-          <div class="video-production-overlay">
-            <span class="video-production-category">Product Video</span>
-            <h3>Product Video Showcase</h3>
-          </div>
-
-          <div class="video-play-badge">
-            <i class="bi bi-play-fill"></i>
-          </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a
-          href="videos/project-33.mp4"
-          class="video-production-card"
-          data-fancybox="video-production-gallery"
-          data-caption="Edited Cinematic Reel"
-          data-type="html5video"
-        >
-<video
-  class="video-production-media"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  poster="images/video-poster-3.jpg"
->
-  <source src="videos/project-33.mp4" type="video/mp4" />
-</video>
-
-          <div class="video-production-overlay">
-            <span class="video-production-category">Video Editing</span>
-            <h3>Edited Cinematic Reel</h3>
-          </div>
-
-          <div class="video-play-badge">
-            <i class="bi bi-play-fill"></i>
-          </div>
-        </a>
-
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Mobile -->
-    <div class="video-production-mobile" data-aos="fade-up" data-aos-delay="350">
-      <div class="swiper video-production-swiper">
+  <!-- Services -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-heading text-center">
+        <span class="section-label" data-aos="fade-up" data-aos-delay="100">Services</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Creative Services Designed To Elevate Your Brand</h2>
+        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+          From premium photography to modern websites, product videos, and professional editing, every service is crafted to help your business stand out with a polished visual identity.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+          <span class="service-tag">Visual Storytelling</span>
+          <h3>Photography</h3>
+          <p>Professional photography for food, products, animals, portraits, and branded visual content with a refined and premium style.</p>
+          <a href="#portfolio" class="service-link">View Related Work</a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="180">
+          <span class="service-tag">Digital Presence</span>
+          <h3>Website Design &amp; Development</h3>
+          <p>Elegant, responsive websites and landing pages built to present your brand professionally and create a strong digital first impression.</p>
+          <a href="#digital-work" class="service-link">See Web Projects</a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+          <span class="service-tag">Motion Content</span>
+          <h3>Product Video Production</h3>
+          <p>High-quality product and promotional videos created to highlight details, increase engagement, and present your brand in a more dynamic way.</p>
+          <a href="#digital-work" class="service-link">Watch Projects</a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="service-tag">Post Production</span>
+          <h3>Photo &amp; Video Editing</h3>
+          <p>Professional retouching, color correction, video editing, and visual enhancement designed to give every final result a clean and premium finish.</p>
+          <a href="#booking" class="service-link">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-heading text-center">
+        <span class="section-label" data-aos="fade-up" data-aos-delay="100">Client Reviews</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Trusted By Clients Who Value Quality</h2>
+        <p class="section-text" data-aos="fade-up" data-aos-delay="300">
+          Feedback from clients who trusted my work in photography, websites, product visuals, and editing services.
+        </p>
+      </div>
+
+      <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="350">
         <div class="swiper-wrapper">
-
           <div class="swiper-slide">
-            <a
-              href="videos/project-11.mp4"
-              class="video-production-card mobile-video-card"
-              data-fancybox="video-production-gallery"
-              data-caption="Creative Brand Video"
-              data-type="html5video"
-            >
-              <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
-                <source src="videos/project-11.mp4" type="video/mp4" />
-              </video>
-
-              <div class="video-production-overlay visible-video-overlay">
-                <span class="video-production-category">Videography</span>
-                <h3>Creative Brand Video</h3>
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
-
-              <div class="video-play-badge">
-                <i class="bi bi-play-fill"></i>
+              <p class="testimonial-text">The photography quality was exceptional. Every image looked polished, elegant, and exactly what we needed for our brand presentation.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">S</div>
+                <div>
+                  <h4>Sara Khaled</h4>
+                  <span>Photography Client</span>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
 
           <div class="swiper-slide">
-            <a
-              href="videos/project-22.mp4"
-              class="video-production-card mobile-video-card"
-              data-fancybox="video-production-gallery"
-              data-caption="Product Video Showcase"
-              data-type="html5video"
-            >
-              <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
-                <source src="videos/project-22.mp4" type="video/mp4" />
-              </video>
-
-              <div class="video-production-overlay visible-video-overlay">
-                <span class="video-production-category">Product Video</span>
-                <h3>Product Video Showcase</h3>
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="4.5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
               </div>
-
-              <div class="video-play-badge">
-                <i class="bi bi-play-fill"></i>
+              <p class="testimonial-text">The website looked clean, modern, and very professional. Communication was smooth, and the final result gave our business a much stronger online presence.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">L</div>
+                <div>
+                  <h4>Lina Mourad</h4>
+                  <span>Website Project</span>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
 
           <div class="swiper-slide">
-            <a
-              href="videos/project-33.mp4"
-              class="video-production-card mobile-video-card"
-              data-fancybox="video-production-gallery"
-              data-caption="Edited Cinematic Reel"
-              data-type="html5video"
-            >
-              <video class="video-production-media" autoplay muted loop playsinline preload="metadata">
-                <source src="videos/project-33.mp4" type="video/mp4" />
-              </video>
-
-              <div class="video-production-overlay visible-video-overlay">
-                <span class="video-production-category">Video Editing</span>
-                <h3>Edited Cinematic Reel</h3>
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="4 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
               </div>
-
-              <div class="video-play-badge">
-                <i class="bi bi-play-fill"></i>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="swiper-pagination video-production-pagination"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="digital-section" id="digital-work">
-  <div class="container">
-    <div class="digital-heading text-center">
-      <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-        Digital Experiences
-      </span>
-
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-        Creative Work Beyond Photography
-      </h2>
-
-      <p class="section-text" data-aos="fade-up" data-aos-delay="300">
-        From elegant website previews to motion-driven product visuals, explore
-        a curated selection of digital work crafted with style, clarity, and
-        modern visual direction.
-      </p>
-    </div>
-
-    <!-- Desktop + Tablet -->
-    <div class="digital-desktop-view">
-      <div class="digital-grid">
-
-        <!-- Video Card 1 -->
-        <a
-          href="videos/project-1.mp4"
-          class="digital-card video-card"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-fancybox="digital-videos"
-          data-caption="Luxury Brand Landing Experience"
-          data-type="html5video"
-        >
-          <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/project-1.mp4" type="video/mp4" />
-          </video>
-          <div class="digital-overlay">
-            <span class="digital-category">Landing Page</span>
-            <h3>Luxury Brand Landing Experience</h3>
-          </div>
-        </a>
-
-        <!-- Video Card 2 -->
-        <a
-          href="videos/project-2.mp4"
-          class="digital-card video-card"
-          data-aos="fade-up"
-          data-aos-delay="180"
-          data-fancybox="digital-videos"
-          data-caption="Interactive Product Showcase"
-          data-type="html5video"
-        >
-          <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/project-2.mp4" type="video/mp4" />
-          </video>
-          <div class="digital-overlay">
-            <span class="digital-category">Front-End</span>
-            <h3>Interactive Product Showcase</h3>
-          </div>
-        </a>
-
-        <!-- Video Card 3 -->
-        <a
-          href="videos/project-3.mp4"
-          class="digital-card video-card"
-          data-aos="fade-up"
-          data-aos-delay="260"
-          data-fancybox="digital-videos"
-          data-caption="Modern Website Interface Motion"
-          data-type="html5video"
-        >
-          <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/project-3.mp4" type="video/mp4" />
-          </video>
-          <div class="digital-overlay">
-            <span class="digital-category">UI / UX</span>
-            <h3>Modern Website Interface Motion</h3>
-          </div>
-        </a>
-
-        <!-- Web Preview Card 1 -->
-        <a
-          href="images/digital-1.jpg"
-          class="digital-card web-preview-card"
-          data-aos="fade-up"
-          data-aos-delay="120"
-          data-fancybox="digital-images"
-          data-caption="Minimal Landing Page Concept"
-        >
-          <div class="browser-frame">
-            <div class="browser-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="browser-body">
-              <div class="web-shot-scroll">
-                <img src="images/digital-1.jpg" alt="Minimal Landing Page Concept" loading="lazy" />
+              <p class="testimonial-text">The product video was beautifully executed. It highlighted the details clearly and helped our product feel more premium and ready for presentation.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">M</div>
+                <div>
+                  <h4>Mohammad N.</h4>
+                  <span>Product Video Client</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="digital-overlay visible-overlay">
-            <span class="digital-category">Web Design</span>
-            <h3>Minimal Landing Page Concept</h3>
-          </div>
-        </a>
-
-        <!-- Web Preview Card 2 -->
-        <a
-          href="images/digital-2.jpg"
-          class="digital-card web-preview-card"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-fancybox="digital-images"
-          data-caption="Elegant Conversion-Focused Layout"
-        >
-          <div class="browser-frame">
-            <div class="browser-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="browser-body">
-              <div class="web-shot-scroll">
-                <img src="images/digital-2.jpg" alt="Elegant Conversion-Focused Layout" loading="lazy" />
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">The editing work was refined and professional. The final visuals felt balanced, clean, and ready to be used immediately for our brand.</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">R</div>
+                <div>
+                  <h4>Rana Fares</h4>
+                  <span>Editing Service</span>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="digital-overlay visible-overlay">
-            <span class="digital-category">Front-End Design</span>
-            <h3>Elegant Conversion-Focused Layout</h3>
-          </div>
-        </a>
-
-        <!-- Web Preview Card 3 -->
-        <a
-          href="images/digital-3.jpg"
-          class="digital-card web-preview-card"
-          data-aos="fade-up"
-          data-aos-delay="280"
-          data-fancybox="digital-images"
-          data-caption="Premium Responsive Web Presentation"
-        >
-          <div class="browser-frame">
-            <div class="browser-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="browser-body">
-              <div class="web-shot-scroll">
-                <img src="images/digital-3.jpg" alt="Premium Responsive Web Presentation" loading="lazy" />
-              </div>
-            </div>
-          </div>
-
-          <div class="digital-overlay visible-overlay">
-            <span class="digital-category">Full Website</span>
-            <h3>Premium Responsive Web Presentation</h3>
-          </div>
-        </a>
-
+        </div>
+        <div class="testimonials-pagination"></div>
       </div>
     </div>
+  </section>
 
-    <!-- Mobile Only -->
-    <div class="digital-mobile-view">
-
-      <!-- Videos Swiper -->
-      <div class="digital-mobile-group">
-        <div class="digital-mobile-subtitle">
-          <span>Featured Motion Projects</span>
-        </div>
-
-        <div class="swiper digital-video-swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <a
-                href="videos/project-1.mp4"
-                class="digital-card video-card mobile-digital-card"
-                data-fancybox="digital-videos"
-                data-caption="Luxury Brand Landing Experience"
-                data-type="html5video"
-              >
-                <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-                  <source src="videos/project-1.mp4" type="video/mp4" />
-                </video>
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">Landing Page</span>
-                  <h3>Luxury Brand Landing Experience</h3>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a
-                href="videos/project-2.mp4"
-                class="digital-card video-card mobile-digital-card"
-                data-fancybox="digital-videos"
-                data-caption="Interactive Product Showcase"
-                data-type="html5video"
-              >
-                <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-                  <source src="videos/project-2.mp4" type="video/mp4" />
-                </video>
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">Front-End</span>
-                  <h3>Interactive Product Showcase</h3>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a
-                href="videos/project-3.mp4"
-                class="digital-card video-card mobile-digital-card"
-                data-fancybox="digital-videos"
-                data-caption="Modern Website Interface Motion"
-                data-type="html5video"
-              >
-                <video class="digital-media" autoplay muted loop playsinline preload="metadata">
-                  <source src="videos/project-3.mp4" type="video/mp4" />
-                </video>
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">UI / UX</span>
-                  <h3>Modern Website Interface Motion</h3>
-                </div>
-              </a>
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination digital-video-pagination"></div>
-        </div>
-      </div>
-
-      <!-- Images Swiper -->
-      <div class="digital-mobile-group">
-        <div class="digital-mobile-subtitle">
-          <span>Website & Landing Page Previews</span>
-        </div>
-
-        <div class="swiper digital-image-swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <a
-                href="images/digital-1.jpg"
-                class="digital-card web-preview-card mobile-digital-card"
-                data-fancybox="digital-images"
-                data-caption="Minimal Landing Page Concept"
-              >
-                <div class="browser-frame">
-                  <div class="browser-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                  <div class="browser-body">
-                    <div class="web-shot-scroll">
-                      <img src="images/digital-1.jpg" alt="Minimal Landing Page Concept" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">Web Design</span>
-                  <h3>Minimal Landing Page Concept</h3>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a
-                href="images/digital-2.jpg"
-                class="digital-card web-preview-card mobile-digital-card"
-                data-fancybox="digital-images"
-                data-caption="Elegant Conversion-Focused Layout"
-              >
-                <div class="browser-frame">
-                  <div class="browser-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                  <div class="browser-body">
-                    <div class="web-shot-scroll">
-                      <img src="images/digital-2.jpg" alt="Elegant Conversion-Focused Layout" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">Front-End Design</span>
-                  <h3>Elegant Conversion-Focused Layout</h3>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a
-                href="images/digital-3.jpg"
-                class="digital-card web-preview-card mobile-digital-card"
-                data-fancybox="digital-images"
-                data-caption="Premium Responsive Web Presentation"
-              >
-                <div class="browser-frame">
-                  <div class="browser-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                  <div class="browser-body">
-                    <div class="web-shot-scroll">
-                      <img src="images/digital-3.jpg" alt="Premium Responsive Web Presentation" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="digital-overlay visible-overlay">
-                  <span class="digital-category">Full Website</span>
-                  <h3>Premium Responsive Web Presentation</h3>
-                </div>
-              </a>
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination digital-image-pagination"></div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="digital-action text-center" data-aos="fade-up" data-aos-delay="350">
-      <a href="#booking" class="view-portfolio-btn">Start Your Project</a>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="why-section" id="why-choose-me">
-  <div class="container">
-    <div class="row align-items-center gy-5">
-
-      <!-- Left Content -->
-      <div class="col-lg-5">
-        <div class="why-content">
-          <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-            Why Choose Me
-          </span>
-
-          <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-            Creative Work Built With Quality, Clarity, And Purpose
-          </h2>
-
-          <p class="section-text why-text" data-aos="fade-up" data-aos-delay="300">
-            Every project is approached with attention to detail, visual direction,
-            and a strong focus on presenting your brand in the most professional way
-            through photography, websites, video, and editing.
-          </p>
-
-          <a href="#booking" class="why-btn" data-aos="fade-up" data-aos-delay="400">
-            Start Your Project
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Cards -->
-      <div class="col-lg-7">
-        <div class="why-cards">
-
-          <div class="why-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="why-card-number">01</div>
-            <h3>Strong Visual Direction</h3>
-            <p>
-              Every project is designed with a clear creative vision to make the final result feel polished, modern, and memorable.
-            </p>
-          </div>
-
-          <div class="why-card" data-aos="fade-up" data-aos-delay="220">
-            <div class="why-card-number">02</div>
-            <h3>Professional Execution</h3>
-            <p>
-              From planning to final delivery, each step is handled with care to create work that looks premium and well-crafted.
-            </p>
-          </div>
-
-          <div class="why-card" data-aos="fade-up" data-aos-delay="290">
-            <div class="why-card-number">03</div>
-            <h3>Tailored To Your Brand</h3>
-            <p>
-              Every service is adapted to your business, style, and goals instead of using a generic one-size-fits-all approach.
-            </p>
-          </div>
-
-          <div class="why-card" data-aos="fade-up" data-aos-delay="360">
-            <div class="why-card-number">04</div>
-            <h3>Refined Final Results</h3>
-            <p>
-              Whether it is photography, websites, or video editing, the final outcome is shaped to feel clean, elegant, and high quality.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="services-heading text-center">
-      <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-        Services
-      </span>
-
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-        Creative Services Designed To Elevate Your Brand
-      </h2>
-
-      <p class="section-text" data-aos="fade-up" data-aos-delay="300">
-        From premium photography to modern websites, product videos, and professional editing,
-        every service is crafted to help your business stand out with a polished visual identity.
-      </p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card" data-aos="fade-up" data-aos-delay="120">
-        <span class="service-tag">Visual Storytelling</span>
-        <h3>Photography</h3>
-        <p>
-          Professional photography for food, products, animals, portraits, and branded visual content
-          with a refined and premium style.
+  <!-- CTA -->
+  <section class="final-cta-section" id="booking">
+    <div class="container">
+      <div class="final-cta-box" data-aos="fade-up" data-aos-delay="100">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="final-cta-title">Let’s Build Something Professional Together</h2>
+        <p class="final-cta-text">
+          Whether you need photography, website design, product videos, or professional photo and video editing, I’d be happy to help bring your idea to life with a clean and premium result.
         </p>
-        <a href="#portfolio" class="service-link">View Related Work</a>
-      </div>
 
-      <div class="service-card" data-aos="fade-up" data-aos-delay="180">
-        <span class="service-tag">Digital Presence</span>
-        <h3>Website Design & Development</h3>
-        <p>
-          Elegant, responsive websites and landing pages built to present your brand professionally
-          and create a strong digital first impression.
-        </p>
-        <a href="#digital-work" class="service-link">See Web Projects</a>
-      </div>
+        <div class="final-cta-actions">
+          <a href="mailto:nurevakontakt@gmail.com" class="final-cta-btn primary-btn">Email Me</a>
+          <a href="tel:+4917676726892" class="final-cta-btn secondary-btn">Contact Me</a>
+        </div>
 
-      <div class="service-card" data-aos="fade-up" data-aos-delay="240">
-        <span class="service-tag">Motion Content</span>
-        <h3>Product Video Production</h3>
-        <p>
-          High-quality product and promotional videos created to highlight details, increase engagement,
-          and present your brand in a more dynamic way.
-        </p>
-        <a href="#digital-work" class="service-link">Watch Projects</a>
-      </div>
-
-      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-        <span class="service-tag">Post Production</span>
-        <h3>Photo & Video Editing</h3>
-        <p>
-          Professional retouching, color correction, video editing, and visual enhancement designed
-          to give every final result a clean and premium finish.
-        </p>
-        <a href="#booking" class="service-link">Start Your Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-<section class="testimonials-section" id="testimonials">
-  <div class="container">
-    <div class="testimonials-heading text-center">
-      <span class="section-label" data-aos="fade-up" data-aos-delay="100">
-        Client Reviews
-      </span>
-
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
-        Trusted By Clients Who Value Quality
-      </h2>
-
-      <p class="section-text" data-aos="fade-up" data-aos-delay="300">
-        Feedback from clients who trusted my work in photography, websites,
-        product visuals, and editing services.
-      </p>
-    </div>
-
-    <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="350">
-      <div class="swiper-wrapper">
-
-        <!-- Testimonial 1 -->
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-
-            <p class="testimonial-text">
-              The photography quality was exceptional. Every image looked polished,
-              elegant, and exactly what we needed for our brand presentation.
-            </p>
-
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">S</div>
-              <div>
-                <h4>Sara Khaled</h4>
-                <span>Photography Client</span>
-              </div>
-            </div>
+        <div class="final-cta-info final-cta-info-two">
+          <div class="final-cta-item">
+            <span class="final-cta-label">Email</span>
+            <a href="mailto:nurevakontakt@gmail.com">nurevakontakt@gmail.com</a>
           </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4.5 out of 5 stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-half"></i>
-            </div>
-
-            <p class="testimonial-text">
-              The website looked clean, modern, and very professional. Communication
-              was smooth, and the final result gave our business a much stronger online presence.
-            </p>
-
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">L</div>
-              <div>
-                <h4>Lina Mourad</h4>
-                <span>Website Project</span>
-              </div>
-            </div>
+          <div class="final-cta-item">
+            <span class="final-cta-label">Phone</span>
+            <a href="tel:+4917676726892">+49 176 76726892</a>
           </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="testimonial-stars" aria-label="4 out of 5 stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </div>
-
-            <p class="testimonial-text">
-              The product video was beautifully executed. It highlighted the details
-              clearly and helped our product feel more premium and ready for presentation.
-            </p>
-
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">M</div>
-              <div>
-                <h4>Mohammad N.</h4>
-                <span>Product Video Client</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-
-            <p class="testimonial-text">
-              The editing work was refined and professional. The final visuals felt
-              balanced, clean, and ready to be used immediately for our brand.
-            </p>
-
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">R</div>
-              <div>
-                <h4>Rana Fares</h4>
-                <span>Editing Service</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="testimonials-pagination"></div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="final-cta-section" id="booking">
-  <div class="container">
-    <div class="final-cta-box" data-aos="fade-up" data-aos-delay="100">
-      <span class="section-label">Get In Touch</span>
-
-      <h2 class="final-cta-title">
-        Let’s Build Something Professional Together
-      </h2>
-
-      <p class="final-cta-text">
-        Whether you need photography, website design, product videos, or professional
-        photo and video editing, I’d be happy to help bring your idea to life with a
-        clean and premium result.
-      </p>
-
-      <div class="final-cta-actions">
-        <a href="mailto:nurevakontakt@gmail.com" class="final-cta-btn primary-btn">Email Me</a>
-        <a href="tel:+4917676726892" class="final-cta-btn secondary-btn">Contact Me</a>
-      </div>
-
-      <div class="final-cta-info final-cta-info-two">
-        <div class="final-cta-item">
-          <span class="final-cta-label">Email</span>
-          <a href="mailto:nurevakontakt@gmail.com">nurevakontakt@gmail.com</a>
-        </div>
-
-        <div class="final-cta-item">
-          <span class="final-cta-label">Phone</span>
-          <a href="tel:+4917676726892">+49 176 76726892</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-
-
-
-<footer class="site-footer" id="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="row g-4 align-items-start">
-
-        <!-- Left: Brand -->
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="#" class="footer-logo">
-              <img src="images/Elegant NURIVA logo with metallic accents 1.png" alt="Nuriva Logo" />
-            </a>
-
-            <p class="footer-desc">
-              Premium creative services in photography, websites, product videos,
-              and professional editing crafted with a refined visual direction.
-            </p>
-
-            <a
-              href="https://wa.me/4917676726892"
-              class="footer-whatsapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat on WhatsApp"
-            >
-              <i class="bi bi-whatsapp"></i>
-              <span>Chat on WhatsApp</span>
-            </a>
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <a href="#" class="footer-logo" aria-label="Nuriva home">
+                <img src="images/Elegant.webp" alt="Nuriva Logo" />
+              </a>
+              <p class="footer-desc">
+                Premium creative services in photography, websites, product videos, and professional editing crafted with a refined visual direction.
+              </p>
+              <a href="https://wa.me/4917676726892" class="footer-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Right: 8 columns -->
-        <div class="col-lg-8">
-          <div class="row g-5">
-
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-4 col-6">
-              <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#digital-work">Digital Work</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#booking">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Services -->
-            <div class="col-lg-4 col-md-4 col-6">
-              <div class="footer-links">
-                <h3>Services</h3>
-                <ul>
-                  <li><a href="#services">Photography</a></li>
-                  <li><a href="#services">Website Design</a></li>
-                  <li><a href="#services">Product Videos</a></li>
-                  <li><a href="#services">Photo Editing</a></li>
-                  <li><a href="#services">Video Editing</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Contact -->
-            <div class="col-lg-4 col-md-4 col-12">
-              <div class="footer-contact">
-                <h3>Contact</h3>
-
-                <div class="footer-contact-item">
-                  <span>Email</span>
-                  <a href="mailto:nurevakontakt@gmail.com">nurevakontakt@gmail.com</a>
+          <div class="col-lg-8">
+            <div class="row g-5">
+              <div class="col-lg-4 col-md-4 col-6">
+                <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#digital-work">Digital Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Contact</a></li>
+                  </ul>
                 </div>
+              </div>
 
-                <div class="footer-contact-item">
-                  <span>Phone</span>
-                  <a href="tel:+4917676726892">+49 176 76726892</a>
+              <div class="col-lg-4 col-md-4 col-6">
+                <div class="footer-links">
+                  <h3>Services</h3>
+                  <ul>
+                    <li><a href="#services">Photography</a></li>
+                    <li><a href="#services">Website Design</a></li>
+                    <li><a href="#services">Product Videos</a></li>
+                    <li><a href="#services">Photo Editing</a></li>
+                    <li><a href="#services">Video Editing</a></li>
+                  </ul>
                 </div>
+              </div>
 
-                <div class="footer-contact-item">
-                  <span>WhatsApp</span>
-                  <a
-                    href="https://wa.me/4917676726892"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Message on WhatsApp
-                  </a>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="footer-contact">
+                  <h3>Contact</h3>
+                  <div class="footer-contact-item">
+                    <span>Email</span>
+                    <a href="mailto:nurevakontakt@gmail.com">nurevakontakt@gmail.com</a>
+                  </div>
+                  <div class="footer-contact-item">
+                    <span>Phone</span>
+                    <a href="tel:+4917676726892">+49 176 76726892</a>
+                  </div>
+                  <div class="footer-contact-item">
+                    <span>WhatsApp</span>
+                    <a href="https://wa.me/4917676726892" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+      </div>
 
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nuriva. All rights reserved.</p>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p>© 2026 Nuriva. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-
-
-
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
-
-  <!-- AOS JS -->
+  <!-- Vendor JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-  AOS.init({
-    duration: 950,
-    once: true,
-    easing: "ease-out-cubic"
-  });
-
-  const siteHeader = document.getElementById("siteHeader");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  let lastScrollY = window.scrollY;
-  let ticking = false;
-
-  function getHideThreshold() {
-    return window.innerWidth < 992 ? 140 : 80;
-  }
-
-  function handleHeaderOnScroll() {
-    if (!siteHeader || !mobileMenu) return;
-
-    const currentScrollY = window.scrollY;
-    const hideThreshold = getHideThreshold();
-    const offcanvasIsOpen = mobileMenu.classList.contains("show");
-
-    if (currentScrollY <= 20) {
-      siteHeader.classList.remove("header-hidden");
-      siteHeader.classList.remove("header-scrolled");
-      lastScrollY = currentScrollY;
-      return;
-    }
-
-    siteHeader.classList.add("header-scrolled");
-
-    if (!offcanvasIsOpen) {
-      if (currentScrollY > lastScrollY && currentScrollY > hideThreshold) {
-        siteHeader.classList.add("header-hidden");
-      } else if (currentScrollY < lastScrollY) {
-        siteHeader.classList.remove("header-hidden");
-      }
-    }
-
-    lastScrollY = currentScrollY;
-  }
-
-  window.addEventListener("scroll", function () {
-    if (!ticking) {
-      window.requestAnimationFrame(function () {
-        handleHeaderOnScroll();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-
-  window.addEventListener("load", handleHeaderOnScroll);
-  window.addEventListener("resize", handleHeaderOnScroll);
-
-  if (mobileMenu) {
-    mobileMenu.addEventListener("show.bs.offcanvas", function () {
-      siteHeader.classList.remove("header-hidden");
-    });
-
-    mobileMenu.addEventListener("hidden.bs.offcanvas", function () {
-      handleHeaderOnScroll();
-    });
-  }
-</script>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 950,
+        once: true,
+        easing: "ease-out-cubic"
+      });
 
+      const siteHeader = document.getElementById("siteHeader");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const typedText = document.querySelector(".typed-text");
+      const portfolioGrid = document.getElementById("portfolioGrid");
+      const portfolioSwiperWrapper = document.getElementById("portfolioSwiperWrapper");
+      const filterButtons = document.querySelectorAll(".filter-btn");
 
-<script>
-  let portfolioSwiper = null;
-  let isPortfolioAnimating = false;
+      let lastScrollY = window.scrollY;
+      let ticking = false;
+      let portfolioSwiper = null;
+      let isPortfolioAnimating = false;
 
-  const portfolioData = {
-    all: [
-      {
-        src: "images/portrait-2.jpg",
-        alt: "Professional portfolio image 1",
-        title: "Curated Signature Visual",
-        category: "All"
-      },
-      {
-        src: "images/food-2.jpg",
-        alt: "Professional portfolio image 2",
-        title: "Premium Editorial Scene",
-        category: "All"
-      },
-      {
-        src: "images/food-1.jpg",
-        alt: "Professional portfolio image 3",
-        title: "Elegant Brand Presentation",
-        category: "All"
-      },
-      {
-        src: "images/portrait-6.jpg",
-        alt: "Professional portfolio image 4",
-        title: "Luxury Creative Composition",
-        category: "All"
-      },
-      {
-        src: "images/product-3.jpg",
-        alt: "Professional portfolio image 5",
-        title: "Refined Visual Story",
-        category: "All"
-      },
-      {
-        src: "images/animal-3.jpg",
-        alt: "Professional portfolio image 6",
-        title: "Signature Premium Frame",
-        category: "All"
+      const portfolioLayouts = ["tall", "standard", "large", "standard", "standard", "standard"];
+
+      const portfolioData = {
+        all: [
+          { src: "images/portrait-2.webp", alt: "Professional portfolio image 1", title: "Curated Signature Visual", category: "All" },
+          { src: "images/food-2.webp", alt: "Professional portfolio image 2", title: "Premium Editorial Scene", category: "All" },
+          { src: "images/food-1.webp", alt: "Professional portfolio image 3", title: "Elegant Brand Presentation", category: "All" },
+          { src: "images/portrait-6.webp", alt: "Professional portfolio image 4", title: "Luxury Creative Composition", category: "All" },
+          { src: "images/product-3.webp", alt: "Professional portfolio image 5", title: "Refined Visual Story", category: "All" },
+          { src: "images/animal-3.webp", alt: "Professional portfolio image 6", title: "Signature Premium Frame", category: "All" }
+        ],
+        portraits: [
+          { src: "images/portrait-2.webp", alt: "Professional portrait photography 1", title: "Elegant Human Portrait", category: "Portraits" },
+          { src: "images/portrait-6.webp", alt: "Professional portrait photography 2", title: "Creative Personality Shot", category: "Portraits" },
+          { src: "images/portrait-5.webp", alt: "Professional portrait photography 3", title: "Natural Light Portrait", category: "Portraits" },
+          { src: "images/portrait-4.webp", alt: "Professional portrait photography 4", title: "Refined Lifestyle Portrait", category: "Portraits" },
+          { src: "images/portrait-3.webp", alt: "Professional portrait photography 5", title: "Luxury Editorial Look", category: "Portraits" },
+          { src: "images/portrait-1.webp", alt: "Professional portrait photography 6", title: "Premium Personal Branding", category: "Portraits" }
+        ],
+        food: [
+          { src: "images/food-1.webp", alt: "Professional food photography 1", title: "Signature Food Styling", category: "Food" },
+          { src: "images/food-2.webp", alt: "Professional food photography 2", title: "Gourmet Dish Capture", category: "Food" },
+          { src: "images/food-3.webp", alt: "Professional food photography 3", title: "Elegant Table Story", category: "Food" },
+          { src: "images/food-4.webp", alt: "Professional food photography 4", title: "Restaurant Plate Detail", category: "Food" },
+          { src: "images/food-5.webp", alt: "Professional food photography 5", title: "Luxury Culinary Scene", category: "Food" },
+          { src: "images/food-6.webp", alt: "Professional food photography 6", title: "Refined Dessert Shot", category: "Food" }
+        ],
+        products: [
+          { src: "images/product-1.webp", alt: "Professional product photography 1", title: "Minimal Product Display", category: "Products" },
+          { src: "images/product-2.webp", alt: "Professional product photography 2", title: "Luxury Packaging Focus", category: "Products" },
+          { src: "images/product-3.webp", alt: "Professional product photography 3", title: "Clean Brand Presentation", category: "Products" },
+          { src: "images/product-4.webp", alt: "Professional product photography 4", title: "Premium Commercial Shot", category: "Products" },
+          { src: "images/product-5.webp", alt: "Professional product photography 5", title: "Modern Studio Product", category: "Products" },
+          { src: "images/product-6.webp", alt: "Professional product photography 6", title: "Elegant Product Detail", category: "Products" }
+        ],
+        animals: [
+          { src: "images/animal-1.webp", alt: "Professional animal photography 1", title: "Natural Animal Portrait", category: "Animals" },
+          { src: "images/animal-2.webp", alt: "Professional animal photography 2", title: "Warm Pet Expression", category: "Animals" },
+          { src: "images/animal-3.webp", alt: "Professional animal photography 3", title: "Outdoor Animal Story", category: "Animals" },
+          { src: "images/animal-4.webp", alt: "Professional animal photography 4", title: "Elegant Pet Capture", category: "Animals" },
+          { src: "images/animal-5.webp", alt: "Professional animal photography 5", title: "Playful Motion Frame", category: "Animals" },
+          { src: "images/animal-6.webp", alt: "Professional animal photography 6", title: "Detailed Fur Portrait", category: "Animals" }
+        ]
+      };
+
+      function getHideThreshold() {
+        return window.innerWidth < 992 ? 140 : 80;
       }
-    ],
 
-    portraits: [
-      {
-        src: "images/portrait-2.jpg",
-        alt: "Professional portrait photography 1",
-        title: "Elegant Human Portrait",
-        category: "Portraits"
-      },
-      {
-        src: "images/portrait-6.jpg",
-        alt: "Professional portrait photography 2",
-        title: "Creative Personality Shot",
-        category: "Portraits"
-      },
-      {
-        src: "images/portrait-5.jpg",
-        alt: "Professional portrait photography 3",
-        title: "Natural Light Portrait",
-        category: "Portraits"
-      },
-      {
-        src: "images/portrait-4.jpg",
-        alt: "Professional portrait photography 4",
-        title: "Refined Lifestyle Portrait",
-        category: "Portraits"
-      },
-      {
-        src: "images/portrait-3.jpg",
-        alt: "Professional portrait photography 5",
-        title: "Luxury Editorial Look",
-        category: "Portraits"
-      },
-      {
-        src: "images/portrait-1.jpg",
-        alt: "Professional portrait photography 6",
-        title: "Premium Personal Branding",
-        category: "Portraits"
+      function handleHeaderOnScroll() {
+        if (!siteHeader || !mobileMenu) return;
+
+        const currentScrollY = window.scrollY;
+        const hideThreshold = getHideThreshold();
+        const offcanvasIsOpen = mobileMenu.classList.contains("show");
+
+        if (currentScrollY <= 20) {
+          siteHeader.classList.remove("header-hidden", "header-scrolled");
+          lastScrollY = currentScrollY;
+          return;
+        }
+
+        siteHeader.classList.add("header-scrolled");
+
+        if (!offcanvasIsOpen) {
+          if (currentScrollY > lastScrollY && currentScrollY > hideThreshold) {
+            siteHeader.classList.add("header-hidden");
+          } else if (currentScrollY < lastScrollY) {
+            siteHeader.classList.remove("header-hidden");
+          }
+        }
+
+        lastScrollY = currentScrollY;
       }
-    ],
 
-    food: [
-      {
-        src: "images/food-1.jpg",
-        alt: "Professional food photography 1",
-        title: "Signature Food Styling",
-        category: "Food"
-      },
-      {
-        src: "images/food-2.jpg",
-        alt: "Professional food photography 2",
-        title: "Gourmet Dish Capture",
-        category: "Food"
-      },
-      {
-        src: "images/food-3.jpg",
-        alt: "Professional food photography 3",
-        title: "Elegant Table Story",
-        category: "Food"
-      },
-      {
-        src: "images/food-4.jpg",
-        alt: "Professional food photography 4",
-        title: "Restaurant Plate Detail",
-        category: "Food"
-      },
-      {
-        src: "images/food-5.jpg",
-        alt: "Professional food photography 5",
-        title: "Luxury Culinary Scene",
-        category: "Food"
-      },
-      {
-        src: "images/food-6.jpg",
-        alt: "Professional food photography 6",
-        title: "Refined Dessert Shot",
-        category: "Food"
+      window.addEventListener("scroll", function () {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            handleHeaderOnScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      window.addEventListener("resize", handleHeaderOnScroll);
+      window.addEventListener("load", handleHeaderOnScroll);
+
+      if (mobileMenu && siteHeader) {
+        mobileMenu.addEventListener("show.bs.offcanvas", function () {
+          siteHeader.classList.remove("header-hidden");
+        });
+
+        mobileMenu.addEventListener("hidden.bs.offcanvas", function () {
+          handleHeaderOnScroll();
+        });
       }
-    ],
 
-    products: [
-      {
-        src: "images/product-1.jpg",
-        alt: "Professional product photography 1",
-        title: "Minimal Product Display",
-        category: "Products"
-      },
-      {
-        src: "images/product-2.jpg",
-        alt: "Professional product photography 2",
-        title: "Luxury Packaging Focus",
-        category: "Products"
-      },
-      {
-        src: "images/product-3.jpg",
-        alt: "Professional product photography 3",
-        title: "Clean Brand Presentation",
-        category: "Products"
-      },
-      {
-        src: "images/product-4.jpg",
-        alt: "Professional product photography 4",
-        title: "Premium Commercial Shot",
-        category: "Products"
-      },
-      {
-        src: "images/product-5.jpg",
-        alt: "Professional product photography 5",
-        title: "Modern Studio Product",
-        category: "Products"
-      },
-      {
-        src: "images/product-6.jpg",
-        alt: "Professional product photography 6",
-        title: "Elegant Product Detail",
-        category: "Products"
+      function createDesktopCard(item, index, galleryName) {
+        const layoutClass = portfolioLayouts[index] || "standard";
+        return `
+          <a href="${item.src}" class="portfolio-card ${layoutClass}" data-fancybox="${galleryName}" data-caption="${item.title}">
+            <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">${item.category}</span>
+              <h3>${item.title}</h3>
+            </div>
+          </a>
+        `;
       }
-    ],
 
-    animals: [
-      {
-        src: "images/animal-1.jpg",
-        alt: "Professional animal photography 1",
-        title: "Natural Animal Portrait",
-        category: "Animals"
-      },
-      {
-        src: "images/animal-2.jpg",
-        alt: "Professional animal photography 2",
-        title: "Warm Pet Expression",
-        category: "Animals"
-      },
-      {
-        src: "images/animal-3.jpg",
-        alt: "Professional animal photography 3",
-        title: "Outdoor Animal Story",
-        category: "Animals"
-      },
-      {
-        src: "images/animal-4.jpg",
-        alt: "Professional animal photography 4",
-        title: "Elegant Pet Capture",
-        category: "Animals"
-      },
-      {
-        src: "images/animal-5.jpg",
-        alt: "Professional animal photography 5",
-        title: "Playful Motion Frame",
-        category: "Animals"
-      },
-      {
-        src: "images/animal-6.jpg",
-        alt: "Professional animal photography 6",
-        title: "Detailed Fur Portrait",
-        category: "Animals"
-      }
-    ]
-  };
-
-  const portfolioLayouts = ["tall", "standard", "large", "standard", "standard", "standard"];
-
-  const portfolioGrid = document.getElementById("portfolioGrid");
-  const portfolioSwiperWrapper = document.getElementById("portfolioSwiperWrapper");
-  const filterButtons = document.querySelectorAll(".filter-btn");
-
-  function getPortfolioItems(category) {
-    return portfolioData[category] || [];
-  }
-
-  function createDesktopCard(item, index, galleryName) {
-    const layoutClass = portfolioLayouts[index] || "standard";
-
-    return `
-      <a
-        href="${item.src}"
-        class="portfolio-card ${layoutClass}"
-        data-fancybox="${galleryName}"
-        data-caption="${item.title}"
-      >
-        <img src="${item.src}" alt="${item.alt}" loading="lazy" />
-        <div class="portfolio-overlay">
-          <span class="portfolio-category">${item.category}</span>
-          <h3>${item.title}</h3>
-        </div>
-      </a>
-    `;
-  }
-
-  function createMobileSlide(item, galleryName) {
-    return `
-      <div class="swiper-slide">
-        <a
-          href="${item.src}"
-          class="portfolio-card mobile-card"
-          data-fancybox="${galleryName}"
-          data-caption="${item.title}"
-        >
-          <img src="${item.src}" alt="${item.alt}" loading="lazy" />
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">${item.category}</span>
-            <h3>${item.title}</h3>
+      function createMobileSlide(item, galleryName) {
+        return `
+          <div class="swiper-slide">
+            <a href="${item.src}" class="portfolio-card mobile-card" data-fancybox="${galleryName}" data-caption="${item.title}">
+              <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">${item.category}</span>
+                <h3>${item.title}</h3>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-    `;
-  }
+        `;
+      }
 
-  function destroyPortfolioSwiper() {
-    if (portfolioSwiper) {
-      portfolioSwiper.destroy(true, true);
-      portfolioSwiper = null;
-    }
-  }
+      function destroyPortfolioSwiper() {
+        if (portfolioSwiper) {
+          portfolioSwiper.destroy(true, true);
+          portfolioSwiper = null;
+        }
+      }
 
-  function initPortfolioSwiper() {
-    if (window.innerWidth <= 575.98) {
-      destroyPortfolioSwiper();
+      function initPortfolioSwiper() {
+        if (window.innerWidth <= 575.98) {
+          destroyPortfolioSwiper();
+          portfolioSwiper = new Swiper(".portfolio-swiper", {
+            slidesPerView: 1.05,
+            spaceBetween: 14,
+            centeredSlides: false,
+            grabCursor: true,
+            speed: 700,
+            pagination: {
+              el: ".portfolio-pagination",
+              clickable: true
+            },
+            breakpoints: {
+              400: {
+                slidesPerView: 1.12,
+                spaceBetween: 16
+              }
+            }
+          });
+        } else {
+          destroyPortfolioSwiper();
+        }
+      }
 
-      portfolioSwiper = new Swiper(".portfolio-swiper", {
-        slidesPerView: 1.05,
-        spaceBetween: 14,
-        centeredSlides: false,
+      function bindFancybox(selector = '[data-fancybox]') {
+        Fancybox.bind(selector, {
+          animated: true,
+          dragToClose: true,
+          showClass: "fancybox-fadeIn",
+          hideClass: "fancybox-fadeOut",
+          Toolbar: {
+            display: {
+              left: [],
+              middle: [],
+              right: ["close"]
+            }
+          },
+          Thumbs: {
+            autoStart: false
+          }
+        });
+      }
+
+      function fillPortfolioMarkup(category) {
+        const items = portfolioData[category] || [];
+        const galleryName = `portfolio-${category}`;
+
+        if (portfolioGrid) {
+          portfolioGrid.innerHTML = items.map((item, index) => createDesktopCard(item, index, galleryName)).join("");
+        }
+
+        if (portfolioSwiperWrapper) {
+          portfolioSwiperWrapper.innerHTML = items.map((item) => createMobileSlide(item, galleryName)).join("");
+        }
+
+        initPortfolioSwiper();
+        bindFancybox('[data-fancybox^="portfolio-"]');
+      }
+
+      function animatePortfolioChange(category) {
+        if (isPortfolioAnimating || !portfolioGrid || !portfolioSwiperWrapper) return;
+        isPortfolioAnimating = true;
+
+        portfolioGrid.classList.add("portfolio-is-switching");
+        portfolioSwiperWrapper.classList.add("portfolio-is-switching");
+
+        setTimeout(function () {
+          fillPortfolioMarkup(category);
+
+          requestAnimationFrame(function () {
+            portfolioGrid.classList.remove("portfolio-is-switching");
+            portfolioSwiperWrapper.classList.remove("portfolio-is-switching");
+            portfolioGrid.classList.add("portfolio-is-visible");
+            portfolioSwiperWrapper.classList.add("portfolio-is-visible");
+
+            setTimeout(function () {
+              portfolioGrid.classList.remove("portfolio-is-visible");
+              portfolioSwiperWrapper.classList.remove("portfolio-is-visible");
+              isPortfolioAnimating = false;
+            }, 420);
+          });
+        }, 180);
+      }
+
+      function setActiveFilter(clickedButton) {
+        filterButtons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+        clickedButton.classList.add("active");
+      }
+
+      filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const filterValue = this.getAttribute("data-filter");
+          if (this.classList.contains("active") || isPortfolioAnimating) return;
+          setActiveFilter(this);
+          animatePortfolioChange(filterValue);
+        });
+      });
+
+      fillPortfolioMarkup("all");
+      window.addEventListener("resize", initPortfolioSwiper);
+
+      new Swiper(".testimonials-swiper", {
+        loop: true,
+        speed: 850,
+        spaceBetween: 22,
         grabCursor: true,
-        speed: 700,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4200,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
         pagination: {
-          el: ".portfolio-pagination",
+          el: ".testimonials-pagination",
           clickable: true
         },
         breakpoints: {
-          400: {
-            slidesPerView: 1.12,
-            spaceBetween: 16
+          576: { slidesPerView: 1.15 },
+          768: { slidesPerView: 2 },
+          1200: { slidesPerView: 3 }
+        }
+      });
+
+      new Swiper(".digital-video-swiper", {
+        loop: false,
+        speed: 700,
+        spaceBetween: 16,
+        grabCursor: true,
+        slidesPerView: 1.08,
+        pagination: {
+          el: ".digital-video-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          420: { slidesPerView: 1.15 },
+          520: { slidesPerView: 1.22 }
+        }
+      });
+
+      new Swiper(".digital-image-swiper", {
+        loop: false,
+        speed: 700,
+        spaceBetween: 16,
+        grabCursor: true,
+        slidesPerView: 1.08,
+        pagination: {
+          el: ".digital-image-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          420: { slidesPerView: 1.15 },
+          520: { slidesPerView: 1.22 }
+        }
+      });
+
+      new Swiper(".video-production-swiper", {
+        loop: false,
+        speed: 700,
+        spaceBetween: 16,
+        grabCursor: true,
+        slidesPerView: 1.08,
+        pagination: {
+          el: ".video-production-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          420: { slidesPerView: 1.15 },
+          520: { slidesPerView: 1.22 }
+        }
+      });
+
+      bindFancybox('[data-fancybox="digital-images"]');
+      bindFancybox('[data-fancybox="digital-videos"]');
+      bindFancybox('[data-fancybox="video-production-gallery"]');
+
+      const words = ["Photography", "Websites", "Product Videos", "Photo Editing", "Video Editing"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typingSpeed = 100;
+      const deletingSpeed = 60;
+      const delayBetweenWords = 1400;
+
+      function typeEffect() {
+        if (!typedText) return;
+
+        const currentWord = words[wordIndex];
+
+        if (!isDeleting) {
+          typedText.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+
+          if (charIndex === currentWord.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, delayBetweenWords);
+            return;
           }
-        }
-      });
-    } else {
-      destroyPortfolioSwiper();
-    }
-  }
 
-  function bindFancybox() {
-    Fancybox.bind('[data-fancybox]', {
-      animated: true,
-      showClass: "fancybox-fadeIn",
-      hideClass: "fancybox-fadeOut",
-      dragToClose: true,
-      Toolbar: {
-        display: {
-          left: [],
-          middle: [],
-          right: ["close"]
+          setTimeout(typeEffect, typingSpeed);
+        } else {
+          typedText.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+
+          if (charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+
+          setTimeout(typeEffect, deletingSpeed);
         }
-      },
-      Thumbs: {
-        autoStart: false
+      }
+
+      if (typedText) {
+        typeEffect();
       }
     });
-  }
-
-  function fillPortfolioMarkup(category) {
-    const items = getPortfolioItems(category);
-    const galleryName = `portfolio-${category}`;
-
-    portfolioGrid.innerHTML = items
-      .map((item, index) => createDesktopCard(item, index, galleryName))
-      .join("");
-
-    portfolioSwiperWrapper.innerHTML = items
-      .map((item) => createMobileSlide(item, galleryName))
-      .join("");
-
-    initPortfolioSwiper();
-    bindFancybox();
-  }
-
-  function animatePortfolioChange(category) {
-    if (isPortfolioAnimating) return;
-    isPortfolioAnimating = true;
-
-    portfolioGrid.classList.add("portfolio-is-switching");
-    portfolioSwiperWrapper.classList.add("portfolio-is-switching");
-
-    setTimeout(() => {
-      fillPortfolioMarkup(category);
-
-      requestAnimationFrame(() => {
-        portfolioGrid.classList.remove("portfolio-is-switching");
-        portfolioSwiperWrapper.classList.remove("portfolio-is-switching");
-
-        portfolioGrid.classList.add("portfolio-is-visible");
-        portfolioSwiperWrapper.classList.add("portfolio-is-visible");
-
-        setTimeout(() => {
-          portfolioGrid.classList.remove("portfolio-is-visible");
-          portfolioSwiperWrapper.classList.remove("portfolio-is-visible");
-          isPortfolioAnimating = false;
-        }, 420);
-      });
-    }, 180);
-  }
-
-  function setActiveFilter(clickedButton) {
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    clickedButton.classList.add("active");
-  }
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filterValue = this.getAttribute("data-filter");
-
-      if (this.classList.contains("active") || isPortfolioAnimating) return;
-
-      setActiveFilter(this);
-      animatePortfolioChange(filterValue);
-    });
-  });
-
-  window.addEventListener("load", function () {
-    fillPortfolioMarkup("all");
-  });
-
-  window.addEventListener("resize", function () {
-    initPortfolioSwiper();
-  });
-</script>
-
-
-
-
-<script>
-  const testimonialsSwiper = new Swiper(".testimonials-swiper", {
-    loop: true,
-    speed: 850,
-    spaceBetween: 22,
-    grabCursor: true,
-    slidesPerView: 1,
-    centeredSlides: false,
-    autoplay: {
-      delay: 4200,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true
-    },
-    pagination: {
-      el: ".testimonials-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 1.15
-      },
-      768: {
-        slidesPerView: 2
-      },
-      1200: {
-        slidesPerView: 3
-      }
-    }
-  });
-</script>
-
-
-
-
-
-
-
-<script>
-  const digitalVideoSwiper = new Swiper(".digital-video-swiper", {
-    loop: false,
-    speed: 700,
-    spaceBetween: 16,
-    grabCursor: true,
-    slidesPerView: 1.08,
-    pagination: {
-      el: ".digital-video-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      420: {
-        slidesPerView: 1.15
-      },
-      520: {
-        slidesPerView: 1.22
-      }
-    }
-  });
-
-  const digitalImageSwiper = new Swiper(".digital-image-swiper", {
-    loop: false,
-    speed: 700,
-    spaceBetween: 16,
-    grabCursor: true,
-    slidesPerView: 1.08,
-    pagination: {
-      el: ".digital-image-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      420: {
-        slidesPerView: 1.15
-      },
-      520: {
-        slidesPerView: 1.22
-      }
-    }
-  });
-
-  Fancybox.bind('[data-fancybox="digital-images"]', {
-    animated: true,
-    dragToClose: true,
-    Toolbar: {
-      display: {
-        left: [],
-        middle: [],
-        right: ["close"]
-      }
-    },
-    Thumbs: {
-      autoStart: false
-    }
-  });
-
-  Fancybox.bind('[data-fancybox="digital-videos"]', {
-    animated: true,
-    dragToClose: true,
-    Toolbar: {
-      display: {
-        left: [],
-        middle: [],
-        right: ["close"]
-      }
-    },
-    Thumbs: {
-      autoStart: false
-    }
-  });
-</script>
-
-
-
-
-
-
-<script>
-  const videoProductionSwiper = new Swiper(".video-production-swiper", {
-    loop: false,
-    speed: 700,
-    spaceBetween: 16,
-    grabCursor: true,
-    slidesPerView: 1.08,
-    pagination: {
-      el: ".video-production-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      420: {
-        slidesPerView: 1.15
-      },
-      520: {
-        slidesPerView: 1.22
-      }
-    }
-  });
-
-  Fancybox.bind('[data-fancybox="video-production-gallery"]', {
-    animated: true,
-    dragToClose: true,
-    Toolbar: {
-      display: {
-        left: [],
-        middle: [],
-        right: ["close"]
-      }
-    },
-    Thumbs: {
-      autoStart: false
-    }
-  });
-</script>
-
-
-
-
-
-<script>
-  const words = [
-    "Photography",
-    "Websites",
-    "Product Videos",
-    "Photo Editing",
-    "Video Editing"
-  ];
-
-  const typedText = document.querySelector(".typed-text");
-
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 100;
-  let deletingSpeed = 60;
-  let delayBetweenWords = 1400;
-
-  function typeEffect() {
-    const currentWord = words[wordIndex];
-
-    if (!isDeleting) {
-      typedText.textContent = currentWord.substring(0, charIndex + 1);
-      charIndex++;
-
-      if (charIndex === currentWord.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, delayBetweenWords);
-        return;
-      }
-
-      setTimeout(typeEffect, typingSpeed);
-    } else {
-      typedText.textContent = currentWord.substring(0, charIndex - 1);
-      charIndex--;
-
-      if (charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-      }
-
-      setTimeout(typeEffect, deletingSpeed);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    if (typedText) {
-      typeEffect();
-    }
-  });
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
-
-
-
-
+  </script>
 </body>
-
 </html>
