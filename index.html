@@ -28,74 +28,107 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
+
+
   <!-- Header -->
-  <header class="site-header" id="siteHeader">
-    <div class="container">
-      <nav class="navbar-custom">
-        <div class="row align-items-center g-2">
-          <div class="col-6 col-lg-3">
-            <a href="#" class="brand-logo" aria-label="Nuriva home">
-              <img src="images/Elegant.webp" alt="Nuriva Logo" />
-            </a>
-          </div>
-
-          <div class="col-lg-6 d-none d-lg-block">
-            <ul class="desktop-nav nav justify-content-center gap-4">
-              <li class="nav-item"><a class="nav-link active-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#digital-work">Digital Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#booking">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-3 text-end">
-            <a href="#booking" class="header-btn d-none d-lg-inline-flex">Contact Me</a>
-
-            <button
-              class="menu-toggle-btn d-lg-none"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mobileMenu"
-              aria-controls="mobileMenu"
-              aria-label="Open menu"
-            >
-              <i class="bi bi-list"></i>
-            </button>
-          </div>
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <nav class="navbar-custom">
+      <div class="row align-items-center g-2">
+        <div class="col-6 col-lg-3">
+          <a href="#home" class="brand-logo" aria-label="Nuriva home">
+            <img src="images/Elegant.webp" alt="Nuriva Logo" />
+          </a>
         </div>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Mobile Menu -->
-  <div class="offcanvas offcanvas-end mobile-menu-canvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-      <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <ul class="desktop-nav nav justify-content-center gap-4">
+            <li class="nav-item">
+              <a class="nav-link active-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#digital-work">Digital Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#testimonials">Reviews</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#booking">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-    <div class="offcanvas-body">
-      <nav class="mobile-nav">
-        <a class="nav-link active-link" href="#" data-bs-dismiss="offcanvas">Home</a>
-        <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
-        <a class="nav-link" href="#digital-work" data-bs-dismiss="offcanvas">Digital Work</a>
-        <a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a>
-        <a class="nav-link" href="#testimonials" data-bs-dismiss="offcanvas">Reviews</a>
-        <a class="nav-link" href="#booking" data-bs-dismiss="offcanvas">Contact</a>
-      </nav>
+        <div class="col-6 col-lg-3 text-end">
+          <a href="#booking" class="header-btn d-none d-lg-inline-flex">Contact Me</a>
 
-      <div class="mobile-menu-bottom">
-        <a href="#booking" class="mobile-book-btn" data-bs-dismiss="offcanvas">Start Your Project</a>
-        <a href="https://wa.me/4917676726892" class="mobile-whatsapp-btn" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-whatsapp"></i>
-          <span>Chat on WhatsApp</span>
-        </a>
+          <button
+            class="menu-toggle-btn d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-label="Open menu"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
       </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div
+  class="offcanvas offcanvas-end mobile-menu-canvas"
+  tabindex="-1"
+  id="mobileMenu"
+  aria-labelledby="mobileMenuLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+
+    <button
+      type="button"
+      class="btn-close-custom"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    >
+      <i class="bi bi-x-lg"></i>
+    </button>
+  </div>
+
+  <div class="offcanvas-body">
+    <nav class="mobile-nav">
+      <a class="nav-link active-link" href="#home">Home</a>
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+      <a class="nav-link" href="#digital-work">Digital Work</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#testimonials">Reviews</a>
+      <a class="nav-link" href="#booking">Contact</a>
+    </nav>
+
+    <div class="mobile-menu-bottom">
+      <a href="#booking" class="mobile-book-btn">Start Your Project</a>
+
+      <a
+        href="https://wa.me/4917676726892"
+        class="mobile-whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="bi bi-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
     </div>
   </div>
+</div>
 
   <!-- Hero -->
   <section class="hero-section">
@@ -756,378 +789,417 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
+
+
+
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        duration: 950,
-        once: true,
-        easing: "ease-out-cubic"
-      });
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 950,
+      once: true,
+      easing: "ease-out-cubic"
+    });
 
-      const siteHeader = document.getElementById("siteHeader");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const typedText = document.querySelector(".typed-text");
-      const portfolioGrid = document.getElementById("portfolioGrid");
-      const portfolioSwiperWrapper = document.getElementById("portfolioSwiperWrapper");
-      const filterButtons = document.querySelectorAll(".filter-btn");
+    const siteHeader = document.getElementById("siteHeader");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const typedText = document.querySelector(".typed-text");
+    const portfolioGrid = document.getElementById("portfolioGrid");
+    const portfolioSwiperWrapper = document.getElementById("portfolioSwiperWrapper");
+    const filterButtons = document.querySelectorAll(".filter-btn");
 
-      let lastScrollY = window.scrollY;
-      let ticking = false;
-      let portfolioSwiper = null;
-      let isPortfolioAnimating = false;
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    let portfolioSwiper = null;
+    let isPortfolioAnimating = false;
 
-      const portfolioLayouts = ["tall", "standard", "large", "standard", "standard", "standard"];
+    const portfolioLayouts = ["tall", "standard", "large", "standard", "standard", "standard"];
 
-      const portfolioData = {
-        all: [
-          { src: "images/portrait-2.webp", alt: "Professional portfolio image 1", title: "Curated Signature Visual", category: "All" },
-          { src: "images/food-2.webp", alt: "Professional portfolio image 2", title: "Premium Editorial Scene", category: "All" },
-          { src: "images/food-1.webp", alt: "Professional portfolio image 3", title: "Elegant Brand Presentation", category: "All" },
-          { src: "images/portrait-6.webp", alt: "Professional portfolio image 4", title: "Luxury Creative Composition", category: "All" },
-          { src: "images/product-3.webp", alt: "Professional portfolio image 5", title: "Refined Visual Story", category: "All" },
-          { src: "images/animal-3.webp", alt: "Professional portfolio image 6", title: "Signature Premium Frame", category: "All" }
-        ],
-        portraits: [
-          { src: "images/portrait-2.webp", alt: "Professional portrait photography 1", title: "Elegant Human Portrait", category: "Portraits" },
-          { src: "images/portrait-6.webp", alt: "Professional portrait photography 2", title: "Creative Personality Shot", category: "Portraits" },
-          { src: "images/portrait-5.webp", alt: "Professional portrait photography 3", title: "Natural Light Portrait", category: "Portraits" },
-          { src: "images/portrait-4.webp", alt: "Professional portrait photography 4", title: "Refined Lifestyle Portrait", category: "Portraits" },
-          { src: "images/portrait-3.webp", alt: "Professional portrait photography 5", title: "Luxury Editorial Look", category: "Portraits" },
-          { src: "images/portrait-1.webp", alt: "Professional portrait photography 6", title: "Premium Personal Branding", category: "Portraits" }
-        ],
-        food: [
-          { src: "images/food-1.webp", alt: "Professional food photography 1", title: "Signature Food Styling", category: "Food" },
-          { src: "images/food-2.webp", alt: "Professional food photography 2", title: "Gourmet Dish Capture", category: "Food" },
-          { src: "images/food-3.webp", alt: "Professional food photography 3", title: "Elegant Table Story", category: "Food" },
-          { src: "images/food-4.webp", alt: "Professional food photography 4", title: "Restaurant Plate Detail", category: "Food" },
-          { src: "images/food-5.webp", alt: "Professional food photography 5", title: "Luxury Culinary Scene", category: "Food" },
-          { src: "images/food-6.webp", alt: "Professional food photography 6", title: "Refined Dessert Shot", category: "Food" }
-        ],
-        products: [
-          { src: "images/product-1.webp", alt: "Professional product photography 1", title: "Minimal Product Display", category: "Products" },
-          { src: "images/product-2.webp", alt: "Professional product photography 2", title: "Luxury Packaging Focus", category: "Products" },
-          { src: "images/product-3.webp", alt: "Professional product photography 3", title: "Clean Brand Presentation", category: "Products" },
-          { src: "images/product-4.webp", alt: "Professional product photography 4", title: "Premium Commercial Shot", category: "Products" },
-          { src: "images/product-5.webp", alt: "Professional product photography 5", title: "Modern Studio Product", category: "Products" },
-          { src: "images/product-6.webp", alt: "Professional product photography 6", title: "Elegant Product Detail", category: "Products" }
-        ],
-        animals: [
-          { src: "images/animal-1.webp", alt: "Professional animal photography 1", title: "Natural Animal Portrait", category: "Animals" },
-          { src: "images/animal-2.webp", alt: "Professional animal photography 2", title: "Warm Pet Expression", category: "Animals" },
-          { src: "images/animal-3.webp", alt: "Professional animal photography 3", title: "Outdoor Animal Story", category: "Animals" },
-          { src: "images/animal-4.webp", alt: "Professional animal photography 4", title: "Elegant Pet Capture", category: "Animals" },
-          { src: "images/animal-5.webp", alt: "Professional animal photography 5", title: "Playful Motion Frame", category: "Animals" },
-          { src: "images/animal-6.webp", alt: "Professional animal photography 6", title: "Detailed Fur Portrait", category: "Animals" }
-        ]
-      };
+    const portfolioData = {
+      all: [
+        { src: "images/portrait-2.webp", alt: "Professional portfolio image 1", title: "Curated Signature Visual", category: "All" },
+        { src: "images/food-2.webp", alt: "Professional portfolio image 2", title: "Premium Editorial Scene", category: "All" },
+        { src: "images/food-1.webp", alt: "Professional portfolio image 3", title: "Elegant Brand Presentation", category: "All" },
+        { src: "images/portrait-6.webp", alt: "Professional portfolio image 4", title: "Luxury Creative Composition", category: "All" },
+        { src: "images/product-3.webp", alt: "Professional portfolio image 5", title: "Refined Visual Story", category: "All" },
+        { src: "images/animal-3.webp", alt: "Professional portfolio image 6", title: "Signature Premium Frame", category: "All" }
+      ],
+      portraits: [
+        { src: "images/portrait-2.webp", alt: "Professional portrait photography 1", title: "Elegant Human Portrait", category: "Portraits" },
+        { src: "images/portrait-6.webp", alt: "Professional portrait photography 2", title: "Creative Personality Shot", category: "Portraits" },
+        { src: "images/portrait-5.webp", alt: "Professional portrait photography 3", title: "Natural Light Portrait", category: "Portraits" },
+        { src: "images/portrait-4.webp", alt: "Professional portrait photography 4", title: "Refined Lifestyle Portrait", category: "Portraits" },
+        { src: "images/portrait-3.webp", alt: "Professional portrait photography 5", title: "Luxury Editorial Look", category: "Portraits" },
+        { src: "images/portrait-1.webp", alt: "Professional portrait photography 6", title: "Premium Personal Branding", category: "Portraits" }
+      ],
+      food: [
+        { src: "images/food-1.webp", alt: "Professional food photography 1", title: "Signature Food Styling", category: "Food" },
+        { src: "images/food-2.webp", alt: "Professional food photography 2", title: "Gourmet Dish Capture", category: "Food" },
+        { src: "images/food-3.webp", alt: "Professional food photography 3", title: "Elegant Table Story", category: "Food" },
+        { src: "images/food-4.webp", alt: "Professional food photography 4", title: "Restaurant Plate Detail", category: "Food" },
+        { src: "images/food-5.webp", alt: "Professional food photography 5", title: "Luxury Culinary Scene", category: "Food" },
+        { src: "images/food-6.webp", alt: "Professional food photography 6", title: "Refined Dessert Shot", category: "Food" }
+      ],
+      products: [
+        { src: "images/product-1.webp", alt: "Professional product photography 1", title: "Minimal Product Display", category: "Products" },
+        { src: "images/product-2.webp", alt: "Professional product photography 2", title: "Luxury Packaging Focus", category: "Products" },
+        { src: "images/product-3.webp", alt: "Professional product photography 3", title: "Clean Brand Presentation", category: "Products" },
+        { src: "images/product-4.webp", alt: "Professional product photography 4", title: "Premium Commercial Shot", category: "Products" },
+        { src: "images/product-5.webp", alt: "Professional product photography 5", title: "Modern Studio Product", category: "Products" },
+        { src: "images/product-6.webp", alt: "Professional product photography 6", title: "Elegant Product Detail", category: "Products" }
+      ],
+      animals: [
+        { src: "images/animal-1.webp", alt: "Professional animal photography 1", title: "Natural Animal Portrait", category: "Animals" },
+        { src: "images/animal-2.webp", alt: "Professional animal photography 2", title: "Warm Pet Expression", category: "Animals" },
+        { src: "images/animal-3.webp", alt: "Professional animal photography 3", title: "Outdoor Animal Story", category: "Animals" },
+        { src: "images/animal-4.webp", alt: "Professional animal photography 4", title: "Elegant Pet Capture", category: "Animals" },
+        { src: "images/animal-5.webp", alt: "Professional animal photography 5", title: "Playful Motion Frame", category: "Animals" },
+        { src: "images/animal-6.webp", alt: "Professional animal photography 6", title: "Detailed Fur Portrait", category: "Animals" }
+      ]
+    };
 
-      function getHideThreshold() {
-        return window.innerWidth < 992 ? 140 : 80;
-      }
+    function getHideThreshold() {
+      return window.innerWidth < 992 ? 140 : 80;
+    }
 
-      function handleHeaderOnScroll() {
-        if (!siteHeader || !mobileMenu) return;
+    function handleHeaderOnScroll() {
+      if (!siteHeader || !mobileMenu) return;
 
-        const currentScrollY = window.scrollY;
-        const hideThreshold = getHideThreshold();
-        const offcanvasIsOpen = mobileMenu.classList.contains("show");
+      const currentScrollY = window.scrollY;
+      const hideThreshold = getHideThreshold();
+      const offcanvasIsOpen = mobileMenu.classList.contains("show");
 
-        if (currentScrollY <= 20) {
-          siteHeader.classList.remove("header-hidden", "header-scrolled");
-          lastScrollY = currentScrollY;
-          return;
-        }
-
-        siteHeader.classList.add("header-scrolled");
-
-        if (!offcanvasIsOpen) {
-          if (currentScrollY > lastScrollY && currentScrollY > hideThreshold) {
-            siteHeader.classList.add("header-hidden");
-          } else if (currentScrollY < lastScrollY) {
-            siteHeader.classList.remove("header-hidden");
-          }
-        }
-
+      if (currentScrollY <= 20) {
+        siteHeader.classList.remove("header-hidden", "header-scrolled");
         lastScrollY = currentScrollY;
+        return;
       }
 
-      window.addEventListener("scroll", function () {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            handleHeaderOnScroll();
-            ticking = false;
-          });
-          ticking = true;
+      siteHeader.classList.add("header-scrolled");
+
+      if (!offcanvasIsOpen) {
+        if (currentScrollY > lastScrollY && currentScrollY > hideThreshold) {
+          siteHeader.classList.add("header-hidden");
+        } else if (currentScrollY < lastScrollY) {
+          siteHeader.classList.remove("header-hidden");
         }
+      }
+
+      lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          handleHeaderOnScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    window.addEventListener("resize", handleHeaderOnScroll);
+    window.addEventListener("load", handleHeaderOnScroll);
+
+    if (mobileMenu && siteHeader) {
+      mobileMenu.addEventListener("show.bs.offcanvas", function () {
+        siteHeader.classList.remove("header-hidden");
       });
 
-      window.addEventListener("resize", handleHeaderOnScroll);
-      window.addEventListener("load", handleHeaderOnScroll);
+      mobileMenu.addEventListener("hidden.bs.offcanvas", function () {
+        handleHeaderOnScroll();
+      });
+    }
 
-      if (mobileMenu && siteHeader) {
-        mobileMenu.addEventListener("show.bs.offcanvas", function () {
-          siteHeader.classList.remove("header-hidden");
-        });
+    function createDesktopCard(item, index, galleryName) {
+      const layoutClass = portfolioLayouts[index] || "standard";
+      return `
+        <a href="${item.src}" class="portfolio-card ${layoutClass}" data-fancybox="${galleryName}" data-caption="${item.title}">
+          <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">${item.category}</span>
+            <h3>${item.title}</h3>
+          </div>
+        </a>
+      `;
+    }
 
-        mobileMenu.addEventListener("hidden.bs.offcanvas", function () {
-          handleHeaderOnScroll();
-        });
-      }
-
-      function createDesktopCard(item, index, galleryName) {
-        const layoutClass = portfolioLayouts[index] || "standard";
-        return `
-          <a href="${item.src}" class="portfolio-card ${layoutClass}" data-fancybox="${galleryName}" data-caption="${item.title}">
+    function createMobileSlide(item, galleryName) {
+      return `
+        <div class="swiper-slide">
+          <a href="${item.src}" class="portfolio-card mobile-card" data-fancybox="${galleryName}" data-caption="${item.title}">
             <img src="${item.src}" alt="${item.alt}" loading="lazy" />
             <div class="portfolio-overlay">
               <span class="portfolio-category">${item.category}</span>
               <h3>${item.title}</h3>
             </div>
           </a>
-        `;
-      }
+        </div>
+      `;
+    }
 
-      function createMobileSlide(item, galleryName) {
-        return `
-          <div class="swiper-slide">
-            <a href="${item.src}" class="portfolio-card mobile-card" data-fancybox="${galleryName}" data-caption="${item.title}">
-              <img src="${item.src}" alt="${item.alt}" loading="lazy" />
-              <div class="portfolio-overlay">
-                <span class="portfolio-category">${item.category}</span>
-                <h3>${item.title}</h3>
-              </div>
-            </a>
-          </div>
-        `;
+    function destroyPortfolioSwiper() {
+      if (portfolioSwiper) {
+        portfolioSwiper.destroy(true, true);
+        portfolioSwiper = null;
       }
+    }
 
-      function destroyPortfolioSwiper() {
-        if (portfolioSwiper) {
-          portfolioSwiper.destroy(true, true);
-          portfolioSwiper = null;
-        }
-      }
-
-      function initPortfolioSwiper() {
-        if (window.innerWidth <= 575.98) {
-          destroyPortfolioSwiper();
-          portfolioSwiper = new Swiper(".portfolio-swiper", {
-            slidesPerView: 1.05,
-            spaceBetween: 14,
-            centeredSlides: false,
-            grabCursor: true,
-            speed: 700,
-            pagination: {
-              el: ".portfolio-pagination",
-              clickable: true
-            },
-            breakpoints: {
-              400: {
-                slidesPerView: 1.12,
-                spaceBetween: 16
-              }
-            }
-          });
-        } else {
-          destroyPortfolioSwiper();
-        }
-      }
-
-      function bindFancybox(selector = '[data-fancybox]') {
-        Fancybox.bind(selector, {
-          animated: true,
-          dragToClose: true,
-          showClass: "fancybox-fadeIn",
-          hideClass: "fancybox-fadeOut",
-          Toolbar: {
-            display: {
-              left: [],
-              middle: [],
-              right: ["close"]
-            }
+    function initPortfolioSwiper() {
+      if (window.innerWidth <= 575.98) {
+        destroyPortfolioSwiper();
+        portfolioSwiper = new Swiper(".portfolio-swiper", {
+          slidesPerView: 1.05,
+          spaceBetween: 14,
+          centeredSlides: false,
+          grabCursor: true,
+          speed: 700,
+          pagination: {
+            el: ".portfolio-pagination",
+            clickable: true
           },
-          Thumbs: {
-            autoStart: false
+          breakpoints: {
+            400: {
+              slidesPerView: 1.12,
+              spaceBetween: 16
+            }
           }
         });
+      } else {
+        destroyPortfolioSwiper();
       }
+    }
 
-      function fillPortfolioMarkup(category) {
-        const items = portfolioData[category] || [];
-        const galleryName = `portfolio-${category}`;
-
-        if (portfolioGrid) {
-          portfolioGrid.innerHTML = items.map((item, index) => createDesktopCard(item, index, galleryName)).join("");
-        }
-
-        if (portfolioSwiperWrapper) {
-          portfolioSwiperWrapper.innerHTML = items.map((item) => createMobileSlide(item, galleryName)).join("");
-        }
-
-        initPortfolioSwiper();
-        bindFancybox('[data-fancybox^="portfolio-"]');
-      }
-
-      function animatePortfolioChange(category) {
-        if (isPortfolioAnimating || !portfolioGrid || !portfolioSwiperWrapper) return;
-        isPortfolioAnimating = true;
-
-        portfolioGrid.classList.add("portfolio-is-switching");
-        portfolioSwiperWrapper.classList.add("portfolio-is-switching");
-
-        setTimeout(function () {
-          fillPortfolioMarkup(category);
-
-          requestAnimationFrame(function () {
-            portfolioGrid.classList.remove("portfolio-is-switching");
-            portfolioSwiperWrapper.classList.remove("portfolio-is-switching");
-            portfolioGrid.classList.add("portfolio-is-visible");
-            portfolioSwiperWrapper.classList.add("portfolio-is-visible");
-
-            setTimeout(function () {
-              portfolioGrid.classList.remove("portfolio-is-visible");
-              portfolioSwiperWrapper.classList.remove("portfolio-is-visible");
-              isPortfolioAnimating = false;
-            }, 420);
-          });
-        }, 180);
-      }
-
-      function setActiveFilter(clickedButton) {
-        filterButtons.forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-        clickedButton.classList.add("active");
-      }
-
-      filterButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          const filterValue = this.getAttribute("data-filter");
-          if (this.classList.contains("active") || isPortfolioAnimating) return;
-          setActiveFilter(this);
-          animatePortfolioChange(filterValue);
-        });
-      });
-
-      fillPortfolioMarkup("all");
-      window.addEventListener("resize", initPortfolioSwiper);
-
-      new Swiper(".testimonials-swiper", {
-        loop: true,
-        speed: 850,
-        spaceBetween: 22,
-        grabCursor: true,
-        slidesPerView: 1,
-        centeredSlides: false,
-        autoplay: {
-          delay: 4200,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        },
-        pagination: {
-          el: ".testimonials-pagination",
-          clickable: true
-        },
-        breakpoints: {
-          576: { slidesPerView: 1.15 },
-          768: { slidesPerView: 2 },
-          1200: { slidesPerView: 3 }
-        }
-      });
-
-      new Swiper(".digital-video-swiper", {
-        loop: false,
-        speed: 700,
-        spaceBetween: 16,
-        grabCursor: true,
-        slidesPerView: 1.08,
-        pagination: {
-          el: ".digital-video-pagination",
-          clickable: true
-        },
-        breakpoints: {
-          420: { slidesPerView: 1.15 },
-          520: { slidesPerView: 1.22 }
-        }
-      });
-
-      new Swiper(".digital-image-swiper", {
-        loop: false,
-        speed: 700,
-        spaceBetween: 16,
-        grabCursor: true,
-        slidesPerView: 1.08,
-        pagination: {
-          el: ".digital-image-pagination",
-          clickable: true
-        },
-        breakpoints: {
-          420: { slidesPerView: 1.15 },
-          520: { slidesPerView: 1.22 }
-        }
-      });
-
-      new Swiper(".video-production-swiper", {
-        loop: false,
-        speed: 700,
-        spaceBetween: 16,
-        grabCursor: true,
-        slidesPerView: 1.08,
-        pagination: {
-          el: ".video-production-pagination",
-          clickable: true
-        },
-        breakpoints: {
-          420: { slidesPerView: 1.15 },
-          520: { slidesPerView: 1.22 }
-        }
-      });
-
-      bindFancybox('[data-fancybox="digital-images"]');
-      bindFancybox('[data-fancybox="digital-videos"]');
-      bindFancybox('[data-fancybox="video-production-gallery"]');
-
-      const words = ["Photography", "Websites", "Product Videos", "Photo Editing", "Video Editing"];
-      let wordIndex = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      const typingSpeed = 100;
-      const deletingSpeed = 60;
-      const delayBetweenWords = 1400;
-
-      function typeEffect() {
-        if (!typedText) return;
-
-        const currentWord = words[wordIndex];
-
-        if (!isDeleting) {
-          typedText.textContent = currentWord.substring(0, charIndex + 1);
-          charIndex++;
-
-          if (charIndex === currentWord.length) {
-            isDeleting = true;
-            setTimeout(typeEffect, delayBetweenWords);
-            return;
+    function bindFancybox(selector = '[data-fancybox]') {
+      Fancybox.bind(selector, {
+        animated: true,
+        dragToClose: true,
+        showClass: "fancybox-fadeIn",
+        hideClass: "fancybox-fadeOut",
+        Toolbar: {
+          display: {
+            left: [],
+            middle: [],
+            right: ["close"]
           }
-
-          setTimeout(typeEffect, typingSpeed);
-        } else {
-          typedText.textContent = currentWord.substring(0, charIndex - 1);
-          charIndex--;
-
-          if (charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-          }
-
-          setTimeout(typeEffect, deletingSpeed);
+        },
+        Thumbs: {
+          autoStart: false
         }
+      });
+    }
+
+    function fillPortfolioMarkup(category) {
+      const items = portfolioData[category] || [];
+      const galleryName = `portfolio-${category}`;
+
+      if (portfolioGrid) {
+        portfolioGrid.innerHTML = items.map((item, index) => createDesktopCard(item, index, galleryName)).join("");
       }
 
-      if (typedText) {
-        typeEffect();
+      if (portfolioSwiperWrapper) {
+        portfolioSwiperWrapper.innerHTML = items.map((item) => createMobileSlide(item, galleryName)).join("");
+      }
+
+      initPortfolioSwiper();
+      bindFancybox('[data-fancybox^="portfolio-"]');
+    }
+
+    function animatePortfolioChange(category) {
+      if (isPortfolioAnimating || !portfolioGrid || !portfolioSwiperWrapper) return;
+      isPortfolioAnimating = true;
+
+      portfolioGrid.classList.add("portfolio-is-switching");
+      portfolioSwiperWrapper.classList.add("portfolio-is-switching");
+
+      setTimeout(function () {
+        fillPortfolioMarkup(category);
+
+        requestAnimationFrame(function () {
+          portfolioGrid.classList.remove("portfolio-is-switching");
+          portfolioSwiperWrapper.classList.remove("portfolio-is-switching");
+          portfolioGrid.classList.add("portfolio-is-visible");
+          portfolioSwiperWrapper.classList.add("portfolio-is-visible");
+
+          setTimeout(function () {
+            portfolioGrid.classList.remove("portfolio-is-visible");
+            portfolioSwiperWrapper.classList.remove("portfolio-is-visible");
+            isPortfolioAnimating = false;
+          }, 420);
+        });
+      }, 180);
+    }
+
+    function setActiveFilter(clickedButton) {
+      filterButtons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+      clickedButton.classList.add("active");
+    }
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const filterValue = this.getAttribute("data-filter");
+        if (this.classList.contains("active") || isPortfolioAnimating) return;
+        setActiveFilter(this);
+        animatePortfolioChange(filterValue);
+      });
+    });
+
+    fillPortfolioMarkup("all");
+    window.addEventListener("resize", initPortfolioSwiper);
+
+    new Swiper(".testimonials-swiper", {
+      loop: true,
+      speed: 850,
+      spaceBetween: 22,
+      grabCursor: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+      autoplay: {
+        delay: 4200,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      pagination: {
+        el: ".testimonials-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        576: { slidesPerView: 1.15 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
       }
     });
-  </script>
+
+    new Swiper(".digital-video-swiper", {
+      loop: false,
+      speed: 700,
+      spaceBetween: 16,
+      grabCursor: true,
+      slidesPerView: 1.08,
+      pagination: {
+        el: ".digital-video-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        420: { slidesPerView: 1.15 },
+        520: { slidesPerView: 1.22 }
+      }
+    });
+
+    new Swiper(".digital-image-swiper", {
+      loop: false,
+      speed: 700,
+      spaceBetween: 16,
+      grabCursor: true,
+      slidesPerView: 1.08,
+      pagination: {
+        el: ".digital-image-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        420: { slidesPerView: 1.15 },
+        520: { slidesPerView: 1.22 }
+      }
+    });
+
+    new Swiper(".video-production-swiper", {
+      loop: false,
+      speed: 700,
+      spaceBetween: 16,
+      grabCursor: true,
+      slidesPerView: 1.08,
+      pagination: {
+        el: ".video-production-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        420: { slidesPerView: 1.15 },
+        520: { slidesPerView: 1.22 }
+      }
+    });
+
+    bindFancybox('[data-fancybox="digital-images"]');
+    bindFancybox('[data-fancybox="digital-videos"]');
+    bindFancybox('[data-fancybox="video-production-gallery"]');
+
+    const words = ["Photography", "Websites", "Product Videos", "Photo Editing", "Video Editing"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 60;
+    const delayBetweenWords = 1400;
+
+    function typeEffect() {
+      if (!typedText) return;
+
+      const currentWord = words[wordIndex];
+
+      if (!isDeleting) {
+        typedText.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, delayBetweenWords);
+          return;
+        }
+
+        setTimeout(typeEffect, typingSpeed);
+      } else {
+        typedText.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+
+        setTimeout(typeEffect, deletingSpeed);
+      }
+    }
+
+    if (typedText) {
+      typeEffect();
+    }
+
+    /* =========================
+       MOBILE MENU LINKS FIX
+    ========================= */
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a[href^="#"], .mobile-book-btn[href^="#"]');
+
+    mobileNavLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+
+        if (!targetSection) return;
+
+        const offcanvasElement = document.getElementById("mobileMenu");
+        const offcanvasInstance =
+          bootstrap.Offcanvas.getInstance(offcanvasElement) ||
+          new bootstrap.Offcanvas(offcanvasElement);
+
+        offcanvasElement.addEventListener("hidden.bs.offcanvas", function () {
+          const headerHeight = siteHeader ? siteHeader.offsetHeight : 0;
+          const targetPosition = targetSection.offsetTop - headerHeight - 10;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+          });
+        }, { once: true });
+
+        offcanvasInstance.hide();
+      });
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
